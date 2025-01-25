@@ -1,0 +1,140 @@
+.bg1 {
+    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    width : 100%;
+    height : 100%;
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile_pic {
+    position: absolute;
+    top : 30%;
+    left : 2%;
+    width : 250px;
+    height : 250px;
+    border-radius: 50%;
+}
+
+#head1 {
+    position: relative;
+    top : 0%;
+    left : 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color :rgb(184, 183, 182);
+}
+
+#main {
+    position: relative;
+    top : 5%;
+    left : 35%;
+    font-size: 90px;
+    letter-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color :rgb(225, 143, 21);
+}
+
+#sub {
+    position: relative;
+    top : -5%;
+    left : 36%;
+    font-size: 22px;
+    letter-spacing: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color :rgb(250, 253, 248);
+}
+
+.spinbox{
+    position: absolute;
+    top:28.4%;
+    left:1.2%;
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    border: 10px #ccc solid;
+    border-top-color:rgb(236, 156, 16);
+    animation: spin 2.5s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    .bg1 {
+        background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        width : 115%;
+        height : 115%;
+        position: absolute;
+        top : 0px;
+        left : 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .profile_pic {
+        position: absolute;
+        top : 19%;
+        left : 31%;
+        width : 162px;
+        height : 162px;
+        border-radius: 82px;
+    }
+
+    #head1 {
+        position: relative;
+        top : 0%;
+        left : 5%;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color :rgb(184, 183, 182);
+    }
+
+    #main {
+        position: relative;
+        top : 40%;
+        left : 17%;
+        font-size: 35px;
+        letter-spacing: 3px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color :rgb(225, 143, 21);
+    }
+
+    #sub {
+        position: relative;
+        top : 37%;
+        left : 18.5%;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color :rgb(250, 253, 248);
+    }
+
+    .spinbox{
+        position: absolute;
+        top:17.8%;
+        left:28.8%;
+        height:160px;
+        width:160px;
+        border-radius: 50%;
+        border: 10px #ccc solid;
+        border-top-color:rgb(236, 156, 16);
+        animation: spin 2.5s linear infinite;
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
