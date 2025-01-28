@@ -60,22 +60,15 @@ body {
 
 .spinbox{
     position: absolute;
-    top:23.4%;
-    left:4.2%;
+    top:22.6%;
+    left:3.9%;
     height:250px;
     width:250px;
     border-radius: 50%;
-    border: 10px #ccc solid;
-    border-top-color:rgb(236, 156, 16);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 2);
+    border: 14px #ccc solid;
+    border-color:rgb(99, 103, 101);
     animation: spin 4s linear infinite;
-}
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
 }
 
 ul {
@@ -136,10 +129,10 @@ li:hover {
     .profile_pic {
         position: absolute;
         align-items: center;
-        top : 26.6%;
-        left : 9.4%;
-        width : 300px;
-        height : 300px;
+        top : 26.2%;
+        left : 8.4%;
+        width : 250px;
+        height : 250px;
         border-radius: 50%;
     }
 
@@ -148,20 +141,13 @@ li:hover {
         align-items: center;
         top:24%;
         /* left:22.3%; */
-        height:300px;
-        width:300px;
+        height:250px;
+        width:250px;
         border-radius: 50%;
         border: 20px #ccc solid;
-        border-top-color:rgb(236, 156, 16);
+        box-shadow: 0, 0, 15px rgba(0, 0, 0, 2);
+        border-color:rgb(99, 103, 101);
         animation: spin 2.5s linear infinite;
-    }
-    @keyframes spin{
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
     }
 
     #head1 {
@@ -175,9 +161,9 @@ li:hover {
 
     #main {
         position: relative;
-        top : 30%;
+        top : 25%;
         left : 12%;
-        font-size: 55px;
+        font-size: 65px;
         letter-spacing: 3px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color :rgb(225, 143, 21);
@@ -185,8 +171,8 @@ li:hover {
 
     #sub {
         position: relative;
-        top : 28%;
-        left : 12%;
+        top : 23%;
+        left : 14%;
         font-size: 27px;
         letter-spacing: 5px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -199,7 +185,7 @@ li:hover {
     }
 
     li {
-        color: #ccc;
+        color: #f9f3f3;
         cursor: pointer;
         font-size: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
