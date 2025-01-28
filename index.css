@@ -1,35 +1,45 @@
-.bg1 {
-    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    width : 100%;
-    height : 100%;
-    position: absolute;
-    top : 0px;
-    left : 0px;
+body {
+    background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
+    /* background-color: rgb(81, 79, 79); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.profile_pic {
+.bg1 {
+    /* background-image: url('wallpaper\ 1.jpg'); */
+    width : 100%;
+    height : 100%;
     position: absolute;
-    top : 30%;
-    left : 2%;
+    top : 0px;
+    left : 1px;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.profile_pic {
+    cursor: pointer;
+    position: absolute;
+    top : 25%;
+    left : 5%;
     width : 250px;
     height : 250px;
     border-radius: 50%;
 }
 
 #head1 {
+    cursor: pointer;
     position: relative;
     top : 0%;
-    left : 5%;
+    left : 2%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color :rgb(184, 183, 182);
 }
 
 #main {
+    cursor: pointer;
     position: relative;
-    top : 5%;
+    top : 10%;
     left : 35%;
     font-size: 90px;
     letter-spacing: 3px;
@@ -38,8 +48,9 @@
 }
 
 #sub {
+    cursor: pointer;
     position: relative;
-    top : -5%;
+    top : -2%;
     left : 36%;
     font-size: 22px;
     letter-spacing: 26px;
@@ -49,14 +60,14 @@
 
 .spinbox{
     position: absolute;
-    top:28.4%;
-    left:1.2%;
+    top:23.4%;
+    left:4.2%;
     height:250px;
     width:250px;
     border-radius: 50%;
     border: 10px #ccc solid;
     border-top-color:rgb(236, 156, 16);
-    animation: spin 2.5s linear infinite;
+    animation: spin 4s linear infinite;
 }
 @keyframes spin{
     0%{
@@ -67,10 +78,43 @@
     }
 }
 
+ul {
+    display: flex;
+    position: relative;
+    left : 1%; 
+    top : 30%
+}
+li {
+    cursor: pointer;
+    color:#ccc;
+    position: relative;
+    left : 10%; 
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    margin-left: 10%;
+    font-weight: 500;
+}
+li:hover {
+    color: aqua;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.line {
+    position: relative;
+    width: 112%;
+    top : 30%;
+    left : -1%;
+}
+
+
+
 @media screen and (max-width : 600px) {
 
-    .bg1 {
-        background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    /* .bg1 {
+        background-image: url('wallpaper\ 1.jpg');
         width : 115%;
         height : 115%;
         position: absolute;
@@ -78,54 +122,36 @@
         left : 0px;
         background-repeat: no-repeat;
         background-size: cover;
+    } */
+
+    body {
+        background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
+        /* background-color: rgb(81, 79, 79); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #201f1f;
+        height: 200%;
     }
     
     .profile_pic {
         position: absolute;
-        top : 19%;
-        left : 31%;
-        width : 162px;
-        height : 162px;
-        border-radius: 82px;
-    }
-
-    #head1 {
-        position: relative;
-        top : 0%;
-        left : 5%;
-        font-size: 25px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color :rgb(184, 183, 182);
-    }
-
-    #main {
-        position: relative;
-        top : 40%;
-        left : 17%;
-        font-size: 35px;
-        letter-spacing: 3px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color :rgb(225, 143, 21);
-    }
-
-    #sub {
-        position: relative;
-        top : 37%;
-        left : 18.5%;
-        font-size: 20px;
-        letter-spacing: 5px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color :rgb(250, 253, 248);
+        align-items: center;
+        top : 26.6%;
+        left : 9.4%;
+        width : 300px;
+        height : 300px;
+        border-radius: 50%;
     }
 
     .spinbox{
         position: absolute;
-        top:17.8%;
-        left:28.8%;
-        height:160px;
-        width:160px;
+        align-items: center;
+        top:24%;
+        /* left:22.3%; */
+        height:300px;
+        width:300px;
         border-radius: 50%;
-        border: 10px #ccc solid;
+        border: 20px #ccc solid;
         border-top-color:rgb(236, 156, 16);
         animation: spin 2.5s linear infinite;
     }
@@ -137,4 +163,61 @@
             transform: rotate(360deg);
         }
     }
+
+    #head1 {
+        position: relative;
+        top : 2%;
+        left : 5%;
+        font-size: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color :rgb(184, 183, 182);
+    }
+
+    #main {
+        position: relative;
+        top : 30%;
+        left : 12%;
+        font-size: 61px;
+        letter-spacing: 3px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color :rgb(225, 143, 21);
+    }
+
+    #sub {
+        position: relative;
+        top : 28%;
+        left : 12%;
+        font-size: 27px;
+        letter-spacing: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color :rgb(250, 253, 248);
+    }
+
+    ul {
+        top : 30%;
+        left : -27%;
+    }
+
+    li {
+        color: #ccc;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        list-style-type: none;
+        display: block;
+        justify-items: center;
+        font-weight: 500;
+    }
+    li:hover {
+        font-size: 20px;
+        color: aqua;
+    }  
+    
+    .line {
+        position: relative;
+        width: 122%;
+        top : 30%;
+        left : -1%;
+    }
+
 }
