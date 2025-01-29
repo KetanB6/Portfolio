@@ -143,8 +143,8 @@ a:hover {
         align-items: center;
         top : 20%;
         left : 6%;
-        width : 200px;
-        height : 200px;
+        width : 150px;
+        height : 150px;
         border-radius: 50%;
         color: rgb(19, 245, 245);
     }
@@ -161,9 +161,9 @@ a:hover {
     #iam {
         cursor: pointer;
         position: relative;
-        top : 19%;
+        top : 18%;
         left : 16%;
-        font-size: 40px;
+        font-size: 25px;
         letter-spacing: 3px;
         font-family: poppins;
         color :rgb(191, 190, 187);
@@ -171,9 +171,9 @@ a:hover {
 
     #main {
         position: relative;
-        top : 18%;
+        top : 17%;
         left : 16%;
-        font-size: 50px;
+        font-size: 40px;
         letter-spacing: 4px;
         font-family: poppins;
         color :rgb(191, 190, 187);
@@ -181,9 +181,9 @@ a:hover {
 
     #sub {
         position: relative;
-        top : 17%;
+        top : 16%;
         left : 17%;
-        font-size: 27px;
+        font-size: 20px;
         letter-spacing: 13px;
         font-family: poppins;
         color :rgb(191, 190, 187);
@@ -194,23 +194,23 @@ a:hover {
         border-radius: 4px;
         width: 46%;
         height: 23px;
-        top : 6.2%;
-        left : 55%;
+        top : 6.3%;
+        left : 62%;
     }
     .line2 {
         position: absolute;
         width: 46%;
         height: 2px;
-        top : 7.5%;
-        left : 55%;
+        top : 8%;
+        left : 62%;
     }
 
     a {
         cursor: pointer;
         position: relative;
-        top : 16%;
-        left : 16%;
-        font-size: 25px;
+        top : 15%;
+        left : 17%;
+        font-size: 21px;
         letter-spacing: 3px;
         font-family: poppins;
         color :rgb(191, 190, 187);
