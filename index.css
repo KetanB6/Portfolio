@@ -44,8 +44,14 @@ body {
     border: 14px rgb(99, 103, 101) solid;
     width : 250px;
     height : 250px;
-    border-radius: 50%;
+    border-radius: 50%; 
     box-shadow: 0 4 10px;
+    transition: 2s;
+}
+.profile_pic:hover {
+    width : 280px;
+    height : 280px;
+    transition: 2s;
 }
 
 #head1 {
@@ -78,6 +84,13 @@ body {
     letter-spacing: 3px;
     font-family: poppins;
     color :rgb(228, 226, 223);
+    transition: 1s;
+}
+#main:hover {
+    font-size: 95px;
+    color :rgb(244, 243, 240);
+    letter-spacing: 4px;
+    transition: 1s;
 }
 
 #sub {
@@ -163,7 +176,7 @@ a:hover {
     height: 110%;
     font-size: 20px;
     background-color: transparent;
-    border: 1px #ccc solid;
+    border: 0px #ccc solid;
     border-radius: 5px;
     line-height: 40px;
 }
@@ -171,6 +184,14 @@ a:hover {
     position: relative;
     top : 50%;
     height : 202%;
+}
+
+h2 {
+    color :rgb(237, 237, 235);
+    cursor: pointer;
+}
+h2:hover {
+    color: aqua;
 }
 
 
