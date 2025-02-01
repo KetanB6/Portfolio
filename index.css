@@ -188,29 +188,29 @@ a:hover {
 
 .projects {
     position: relative;
-    top : 60%;
+    top : 70%;
     height : 212%;
     width: 164%;
 }
 .hotel_out{
     position: absolute;
-    top : 9%;
+    top : 21%;
     left : 72%;
-    height: 86%;
+    height: 83%;
     width : 25%;
     border-radius: 25px;
 }
 .hotel_code {
     position: relative;
-    top : -6%;
+    top : 6%;
     left : -19%;
     font-size: 20px;
     letter-spacing: 1px;
 }
 .sms_code {
     position: relative;
-    top : -6%;
-    left : 0%;
+    top : 11.5%;
+    left : -3%;
     font-size: 20px;
     letter-spacing: 1px;
 }
@@ -224,24 +224,25 @@ a:hover {
 
 .SMS_out {
     position: absolute;
-    top : 2%;
-    left : -40%;
-    height: 98%;
-    width : 35%;
+    top : 23%;
+    left : -30%;
+    height: 89%;
+    width : 30%;
     border-radius: 25px;
 }
 
 .SMS_desc {
+    padding-left: 20px;
     position: absolute;
-    top : 5%;
-    left : 28%;
+    top : 1%;
+    left : 23%;
     border : 0px #ccc solid;
     height: 93%;
-    width : 70%;
+    width : 75%;
 }
 
 h2 {
-    color :rgb(209, 209, 203);
+    color :rgb(194, 245, 240);
     cursor: pointer;
 }
 h2:hover {
@@ -412,60 +413,70 @@ h2:hover {
     }
     .hotel_out{
         position: absolute;
-        top : 28%;
-        left : 78%;
+        top : 37%;
+        left : 81%;
         height: 15%;
-        width : 10%;
+        border : 3px #ccc solid;
+        width : 15%;
         border-radius: 10px;
     }
     .hotel_out:hover {
         position: absolute;
         top : 10%;
-        left : 20%;
+        left : 10%;
         height: 80%;
-        width : 70%;
+        width : 90%;
         border-radius: 10px;
     }
 
     .SMS {
         position: relative;
         left : -110px;
-        top : 25%;
+        top : 30%;
         height : 220%;
         width: 190%;
     }
 
     .SMS_out {
         position: relative;
-        top : 17%;
-        left : 100%;
-        height: 7%;
-        width : 13%;
-        border-radius: 20px;
+        top : 21.3%;
+        left : 85%;
+        height: 5%;
+        width : 15%;
+        border : 3px #ccc solid;
+        border-radius: 10px;
     }
     .SMS_out:hover {
         position: relative;
         top : 0%;
         left : 1%;
-        height: 20%;
+        height: 23%;
         width : 100%;
         border-radius: 8px;
     }
 
     .hotel_code {
         position: relative;
-        top : -3%;
+        top : 9%;
         left : -12%;
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
 
     .sms_code {
         position: relative;
-        top : -2.2%;
+        top : 4.9%;
         left : 14%;
         font-size: 20px;
         letter-spacing: 0px;
+    }
+
+    .thanks {
+        position: absolute;
+        top : 990%;
+        left : 40%;
+        font-family: poppins;
+        color :rgb(19, 245, 245);
     }
     
 }
