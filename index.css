@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(7px);
     background: rgba(255, 255, 255, 0.1); /* Optional overlay tint */
     z-index: 0;
 }
@@ -149,20 +149,21 @@ hr {
 
 a {
     text-decoration: none;
-}
-
-a {
     cursor: pointer;
     position: relative;
     top : -13%;
-    left : 55.4%;
+    left : auto;
     font-size: 40px;
     letter-spacing: 3px;
     font-family: poppins;
-    color :rgb(191, 190, 187);
+    color :rgb(234, 233, 231);
 }
 a:hover {
     color :rgb(19, 245, 245);
+}
+
+.scroll_link{
+    left : 33vw;
 }
 
 .about {
@@ -202,15 +203,15 @@ a:hover {
 }
 .hotel_code {
     position: relative;
-    top : 6%;
-    left : -19%;
+    top : 12vh;
+    left : -13vw;
     font-size: 20px;
     letter-spacing: 1px;
 }
 .sms_code {
     position: relative;
-    top : 11.5%;
-    left : -3%;
+    top : 23vh;
+    left : -20vh;
     font-size: 20px;
     letter-spacing: 1px;
 }
@@ -249,14 +250,11 @@ h2:hover {
     color: aqua;
 }
 
-.thanks {
-    position: absolute;
-    top : 995%;
-    left : 43%;
-    font-family: poppins;
-    color :rgb(19, 245, 245);
+.sub{
+    text-align: center;
+    color :rgb(194, 245, 240);
+    cursor: pointer;
 }
-
 
 @media screen and (max-width : 768px) {
 
@@ -268,13 +266,15 @@ h2:hover {
         height: 200%;
     }
 
+
     hr {
-        top : 60;
+        top : 8vh;
+        width: 115vw;
     }
 
     .profile {
         position: absolute;
-        left : 60%; 
+        left : 70%; 
         top : 2.5%;
     }
     .profile:hover {
@@ -283,7 +283,7 @@ h2:hover {
     
     .linkedin {
         position: absolute;
-        left : 75%; 
+        left : 85vw; 
         top : 2.5%;
     }
     .linkedin:hover {
@@ -292,7 +292,7 @@ h2:hover {
     
     .insta {
         position: absolute;
-        left : 90%; 
+        left : 100vw; 
         top : 2.5%;
     }
     .insta:hover {
@@ -306,8 +306,8 @@ h2:hover {
         align-items: center;
         top : 16%;
         left : 6%;
-        width : 150px;
-        height : 150px;
+        width : 190px;
+        height : 190px;
         border-radius: 50%;
         box-shadow: 0 4 10px;
     }
@@ -324,7 +324,7 @@ h2:hover {
     #iam {
         cursor: pointer;
         position: relative;
-        top : 16%;
+        top : 35vh;
         left : 16%;
         font-size: 25px;
         letter-spacing: 3px;
@@ -334,10 +334,10 @@ h2:hover {
 
     #main {
         position: relative;
-        top : 13.5%;
+        top : 30vh;
         line-height: 1.2;
         left : 14.8%;
-        font-size: 60px;
+        font-size: 65px;
         letter-spacing: 5px;
         font-family: poppins;
         color :rgb(223, 221, 217);
@@ -351,7 +351,7 @@ h2:hover {
 
     #sub {
         position: relative;
-        top : 11%;
+        top : 25vh;
         left : 17%;
         font-size: 25px;
         letter-spacing: 4px;
@@ -380,7 +380,7 @@ h2:hover {
         cursor: pointer;
         position: relative;
         top : 11%;
-        left : 17%;
+        left : 0%;
         font-size: 21px;
         letter-spacing: 3px;
         font-family: poppins;
@@ -390,19 +390,16 @@ h2:hover {
         color :rgb(19, 245, 245);
     }
 
+    .scroll_link{
+        left : 10vw;
+        top : 25vh;
+        font-size: 22px;
+    }
+
     .about {
         position: relative;
-        top : 20%;
-        left : 1%;
-        color : white;
-        font-family: poppins;
-        width: 160%;
-        padding-left: 3%;
-        height: 65%;
+        top: 50vh;
         font-size: 15px;
-        background-color: transparent;
-        border: 0px #ccc solid;
-        border-radius: 5px;
         line-height: 30px;
     }
     
@@ -471,12 +468,35 @@ h2:hover {
         letter-spacing: 0px;
     }
 
-    .thanks {
-        position: absolute;
-        top : 990%;
-        left : 40%;
-        font-family: poppins;
-        color :rgb(19, 245, 245);
-    }
-    
 }
+
+
+
+.card {
+    background: transparent;
+    backdrop-filter: blur(50px);
+    top: 40vh;
+    height: auto;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 20px 15px rgba(3, 3, 3, 0.05);
+    margin-bottom: 1.5em;
+    margin-left: 3vh;
+    border: 2px #ccc solid;
+  }
+
+  ul{
+    display: flex;
+    list-style: none;
+    gap: 10vw;
+    padding-left: 15vw;
+  }
+
+  .logos{
+    height: 15vh;
+    display: block;
+    width: 100%;
+  }
+
+
+ 
