@@ -493,10 +493,87 @@ h2:hover {
   }
 
   .logos{
-    height: 15vh;
+    height: 16vh;
     display: block;
-    width: 100%;
+    width: 12vw;
+    margin-left: 4vw;
   }
 
+  .proj_height{
+    height: 8vh;
+    padding-top: 0vh;
+    background-color: rgb(90, 91, 92);
+  }
 
+  .proj_container{
+    display: flex;
+    gap: 11vw;
+    flex-wrap: wrap;
+  }
+
+  .skill_container{
+    display: flex;
+    gap: 7vw;
+    flex-wrap: wrap;
+  }
  
+ .proj{
+    width: 42vh;
+    height: 30vh;
+    gap: 100px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+ }
+
+ .HMS {
+    display:none;
+    position:relative;
+    top: -50vh;
+    left: -2vw;
+    width: 85vw;
+    background-color: rgb(69, 69, 69);
+    z-index: 999;
+ }
+
+ .HMS_main:hover .HMS {
+    display:block;
+ }
+
+ .SMS {
+    display:none;
+    position:relative;
+    top: -120vh;
+    left: -2vw;
+    width: 85vw;
+    background-color: rgb(69, 69, 69);
+ }
+
+ .SMS_main:hover .SMS {
+    display:block;
+ }
+
+ .padarth {
+    display:none;
+    position:relative;
+    top: -120vh;
+    left: -2vw;
+    width: 85vw;
+    background-color: rgb(69, 69, 69);
+ }
+
+ .Padarth_main:hover .padarth {
+    display:block;
+ }
+
+ .email{
+    width:35vw;
+    height: 8vh;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    color:aliceblue;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: 27vw;
+ }
+
