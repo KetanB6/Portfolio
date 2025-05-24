@@ -1,12 +1,23 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <script>
+        function display1() {
+            document.getElementById('HMS').style.display = "block";
+        }
+        function display2() {
+            document.getElementById('SMS').style.display = "block";
+        }
+        function display3() {
+            document.getElementById('Padarth').style.display = "block";
+        }
+    </script>
     <div class="blur-overlay"></div>
     <h2 id="head1">Portfolio</h2>
     <hr>
@@ -18,7 +29,7 @@
     <a class="scroll_link" href="#" onclick="scrollWin()">Get to <font color="aqua">know</font> me better</a>
     <script>
         function scrollWin() {
-            window.scrollTo(0, 750);
+            window.scrollTo(0, 760);
         }
     </script>
     <a href="https://ketanb6.github.io/Portfolio/" class="profile" target="_blank"><img
@@ -34,7 +45,7 @@
 
     <!-- About -->
     <div class="about card">
-        <h2 class="sub">Background</h2>
+        <h2 class="sub contain">Background</h2>
         <p>Hello! I'm a BCA student pursuing degree in college of computer science and information
             technology, latur and will graduate in 2026, with a strong foundation in Java, C, and C++.
             My primary focus is on Java development, and I’m currently advancing my skills
@@ -52,7 +63,7 @@
     </div>
 
     <div class="about card">
-        <h2 class="sub">Skills</h2>
+        <h2 class="sub contain">Languages</h2>
         <div class="skill_container">
             <img src="https://raw.githubusercontent.com/KetanB6/Portfolio/7a7ec9f4ca48a3f0bf7493b4bf57fc37a3b05f3b/C.png"
                 alt="c" class="logos">
@@ -75,148 +86,185 @@
     </div>
 
     <div class="about card">
-        <h2 class="sub">Projects</h2><br>
+        <h2 class="sub contain">Projects</h2><br>
         <div class="proj_container">
+            <div class="Padarth_main">
+
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/Padarth.png?raw=true" alt="Padarth"
+                    class="proj">
+                <h3 class="size">Padarth: Ingredient Info. Provider</h3>
+                <button class="hover_btn btn1" onclick="padarthVisible()">Details</button>
+                <script>
+                    function padarthVisible() {
+                        document.getElementById('padarth').style.visibility = 'visible';
+                    }
+                </script>
+            </div>
+
             <div class="HMS_main">
+
                 <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS.png?raw=true" alt="HMS" class="proj">
-                <h4>Hotel Management System</h4>
-
-                <div class="about card HMS">
-                    <h2><a href="https://github.com/KetanB6/Portfolio/blob/dd40a4ca2f4abcb10eaa499748cefcc49825fa15/Hotel_Manage.cpp"
-                            target="_blank">
-                            ○ Hotel Management System (code)</a></h2><br>
-                    I developed a Hotel Management System in C++ that efficiently handles various<br>
-                    reception-related operations, such as guest management and room management. <br>
-                    The program provides an instructions to perform hotel operations.
-                    <br><br>
-                    Key Features
-                    <br><br>
-                    1. Available Rooms<br>
-                    Displays a list of available rooms along with their price/rent.<br><br>
-
-                    2. Room Booking<br>
-                    Allows new bookings and generates a receipt upon successful reservation.<br><br>
-
-                    3. Cancel Room<br>
-                    Enables guests to cancel their booking, but they must do so within 15 seconds<br><br>
-                    of receipt generation.<br>
-
-                    4. Departure<br>
-                    Manages guest check-out and updates room availability accordingly.<br><br>
-
-                    5. Assigned Room List<br>
-                    Displays all rooms along with their current status: booked, canceled,<br>
-                    or checked out.<br><br>
-                    Developing this project significantly enhanced my problem-solving skills,<br>
-                    logical thinking, and object-oriented programming (OOP) concepts. It also provided<br>
-                    valuable experience in designing structured and efficient programs.
-
-                </div>
-
+                <h3 class="size">Hotel Management system</h3>
+                <button class="hover_btn btn2" onclick="hmsVisible()">Details</button>
+                <script>
+                    function hmsVisible() {
+                        document.getElementById('hms').style.visibility = 'visible';
+                    }
+                </script>
             </div>
 
-            <div>
-                <div class="SMS_main">
-                    <img src="https://github.com/KetanB6/Portfolio/blob/main/SMS.png?raw=true" alt="SMS" class="proj">
-                    <h4>Student Management System</h4>
-                    <div class="about card SMS">
-                        <h2><a href="https://github.com/KetanB6/Portfolio/blob/main/SMS.java" target="_blank">○ Student
-                                Management System (code)</a></h2><br>
-                        I developed a console-based Student Management System in Core Java to efficiently<br>
-                        manage student details in schools and colleges. This system handles student records,<br>
-                        fee management, attendance, exam reports, and library operations.<br><br>
-
-                        Key Features<br><br>
-
-                        <font color="gray">Student Management</font><br>
-
-                        1. Fee Structure – Displays the fee details for students.<br>
-
-                        2. Add Student – Registers a new student.<br>
-
-                        3. Show All Students – Lists all students in the selected department.<br>
-
-                        4. Search Student – Finds a student using their roll number.<br>
-
-                        5. Attendance Records – Maintains student attendance.<br>
-
-                        6. Update Student Info – Allows modifications to student details.<br>
-
-                        7. Due Fee Payment – Tracks and processes pending fees.<br>
-
-                        8. Exam Report – Stores and displays student marks.<br><br>
-
-                        <font color="gray">Library Management</font><br>
-
-                        1. Add Book – Adds new books to the library.<br>
-
-                        2. Search Book – Finds books using keywords or IDs.<br>
-
-                        3. Lend Book – Issues books to students.<br>
-                        <br>
-                        The library and student management systems are interconnected—students can use <br>
-                        their roll numbers to borrow books, ensuring seamless integration between both<br>
-                        modules.<br><br>
-                        This project helped me understand how enterprise software works and how different<br>
-                        modules within a system can be efficiently developed and connected.
-                    </div>
-                </div>
-
+            <div class="SMS_main">
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/SMS.png?raw=true" alt="SMS" class="proj">
+                <h3 class="size">Student Management System</h3>
+                <button class="hover_btn btn3" onclick="smsVisible()">Details</button>
+                <script>
+                    function smsVisible() {
+                        document.getElementById('sms').style.visibility = 'visible';
+                    }
+                </script>
             </div>
+            
 
-            <div>
-                <div class="Padarth_main">
-                    <img src="https://github.com/KetanB6/Portfolio/blob/main/Padarth.png?raw=true" alt="Padarth" class="proj">
-                    <h4>Padarth: ingredient info.</h4>
+            <br><button class="more">View More</button>
+        </div>
 
-                    <div class="about card padarth">
-                        <h2><a href="#">○ Padarth: ingredient information (code) </h2></a><br>
-                        Padarth is a web-based ingredient analysis tool that allows users to scan, upload,<br>
-                        and search for ingredients to retrieve detailed information and know how safe an<br>
-                        ingredient is for health.
+        <div class="about card info" id='padarth'>
+           
+            Padarth is a web-based ingredient analysis tool that allows users to scan,<br>
+            upload, and search for ingredients to retrieve detailed information and know<br>
+            how safe an ingredient is for health.<br>
 
-                        <h4>Features</h4>
+            <font color="gray">Features</font><br>
 
-                        1. Scan Ingredient – Capture an image using a camera, extract text, and get ingredient
-                        details.<br>
+            1. Scan Ingredient – Capture an image using a camera, extract text, and get ingredient details.<br>
 
-                        2. Upload Ingredient – Upload an image directly for analysis.<br>
 
-                        3. Search Ingredient – Search for ingredients by name.<br>
+            2. Upload Ingredient – Upload an image directly for analysis.<br>
 
-                        <h4>How It Works</h4>
 
-                        1. The image is captured/uploaded and converted to Base64.<br>
-
-                        2. The image is processed to extract text.<br>
-
-                        3. Extracted text is sent to Gemini AI for ingredient details.<br>
-
-                        4. Processed data is sent to JSP for display.<br>
+            3. Search Ingredient – Search for ingredients by name.<br>
 
 
 
-                        <h4>Technologies Used</h4>
+            <font color="gray">How It Works</font><br>
 
-                        Frontend – HTML, CSS, JavaScript<br>
+            1. The image is captured/uploaded and converted to Base64.<br>
 
-                        Backend – Java Servlet<br>
 
-                        UI Rendering – JSP (Java Server Pages)<br>
+            2. The image is processed to extract text.<br>
 
-                    </div>
-                </div>
-            </div>
+
+            3. Extracted text is sent to Gemini AI for ingredient details.<br>
+
+
+            4. Processed data is sent to JSP for display.<br>
+
+            <font color="gray">Technologies Used</font><br>
+
+            Frontend – HTML, CSS, JavaScript<br>
+
+            Backend – Java Servlet<br>
+
+            UI Rendering – JSP (Java Server Pages)<br>
+
+
+            Throughout this project development, I learned a lot, including Servlets,<br>
+             JSP, and API integration.
+
+            <button class="back" onclick="padarthInVisible()">X</button>
+            <script>
+                function padarthInVisible() {
+                    document.getElementById('padarth').style.visibility = 'hidden';
+                }
+            </script>
+        </div>
+
+        <div class="about card info" id='hms'>
+            A Hotel Management System in C++ that efficiently handles various<br>
+            reception-related operations, such as guest management and room management. <br>
+            The program provides an instructions to perform hotel operations.
+            <br><br>
+            Key Features:
+            <br>
+            1. Available Rooms:<br>
+            Displays a list of available rooms along with their price/rent.<br>
+
+            2. Room Booking:<br>
+            Allows new bookings and generates a receipt upon successful reservation.<br>
+
+            3. Cancel Room:<br>
+            Enables guests to cancel their booking, but they must do so within 15 seconds<br>
+            of receipt generation.<br>
+
+            4. Departure:<br>
+            Manages guest check-out and updates room availability accordingly.<br>
+
+            5. Assigned Room List:<br>
+            Displays all rooms along with their current status: booked, canceled,<br>
+            or checked out.<br><br>
+            Developing this project significantly enhanced my problem-solving skills,<br>
+            logical thinking, and object-oriented programming (OOP) concepts. It also provided<br>
+            valuable experience in designing structured and efficient programs.
+            <button class="back" onclick="hmsInVisible()">X</button>
+            <script>
+                function hmsInVisible() {
+                    document.getElementById('hms').style.visibility = 'hidden';
+                }
+            </script>
+        </div>
+
+        <div class="about card info" id='sms'>
+            A console-based Student Management System in Core Java to efficiently<br>
+            manage student details in schools and colleges. This system handles student records,<br>
+            fee management, attendance, exam reports, and library operations.
+            <br>
+            Key Features:
+            <br>
+            <font color="gray">Student Management</font><br>
+            1. Fee Structure – Displays the fee details for students.<br>
+
+            2. Add Student – Registers a new student.<br>
+
+            3. Show All Students – Lists all students in the selected department.<br>
+
+            4. Search Student – Finds a student using their roll number.<br>
+
+            5. Attendance Records – Maintains student attendance.<br>
+
+            6. Update Student Info – Allows modifications to student details.<br>
+
+            7. Due Fee Payment – Tracks and processes pending fees.<br>
+
+            8. Exam Report – Stores and displays student marks.<br>
+
+            <font color="gray">Library Management</font><br>
+
+            1. Add Book – Adds new books to the library.<br>
+
+            2. Search Book – Finds books using keywords or IDs.<br>
+
+            3. Lend Book – Issues books to students.<br>
+            <br>
+            The library and student management systems are interconnected—students can use <br>
+            their roll numbers to borrow books, ensuring seamless integration between both modules.<br><br>
+            <button class="back" onclick="smsInVisible()">X</button>
+            <script>
+                function smsInVisible() {
+                    document.getElementById('sms').style.visibility = 'hidden';
+                }
+            </script>
         </div>
     </div>
 
-    <div class="about card contact">
-        <h2 class="sub">Contact Me</h2>
-            <a href="mailto:ketanbidave07@gmail.com">
-                <button class="email">
-                    ✉ Email Me
-                </button>
-            </a>
+
+
+    <div class="about card">
+        <h2 class="sub contain">Contact Me</h2>
+        <a href="mailto:ketanbidave07@gmail.com">
+            <button class="email">
+                ✉ Email Me
+            </button>
+        </a>
     </div>
 </body>
 
