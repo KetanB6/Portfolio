@@ -1,579 +1,468 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
-    /* background-color: rgb(81, 79, 79); */
-    /* background-repeat: repeat-y; */
-    background-size: cover;
-    width : 60%;
-    margin: 0;
-    
-}
-
-.blur-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.1); /* Optional overlay tint */
-    z-index: 0;
-}
-
-.bg1 {
-    /* background-image: url('wallpaper\ 1.jpg'); */
-    width : 100%;
-    height : 100%;
-    position: absolute;
-    top : 0px;
-    left : 1px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-.profile_pic {
-    cursor: none;
-    position: absolute;
-    top : 27%;
-    left : 5%;
-    border: 14px rgb(99, 103, 101) solid;
-    width : 250px;
-    height : 250px;
-    border-radius: 50%; 
-    box-shadow: 0 4 10px;
-    transition: 2s;
-}
-.profile_pic:hover {
-    width : 280px;
-    height : 280px;
-    transition: 2s;
-}
-
-#head1 {
-    cursor: default;
-    position: relative;
-    top : 2%;
-    left : 3%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color :rgb(133, 132, 131);
-}
-
-#iam {
-    cursor: default;
-    position: relative;
-    top : 13%;
-    left : 55.4%;
-    font-size: 50px;
-    letter-spacing: 3px;
-    font-family: poppins;
-    color :rgb(191, 190, 187);
-}
-
-#main {
-    cursor: default;
-    position: relative;
-    top : -2%;
-    left : 55%;
-    font-size: 90px;
-    letter-spacing: 3px;
-    font-family: poppins;
-    color :rgb(228, 226, 223);
-    transition: 1s;
-}
-#main:hover {
-    font-size: 95px;
-    color :rgb(244, 243, 240);
-    letter-spacing: 4px;
-    transition: 1s;
-}
-
-#sub {
-    cursor: default;
-    position: relative;
-    top : -14%;
-    left : 56%;
-    font-size: 22px;
-    letter-spacing: 24px;
-    font-family: poppins;
-    color :rgb(191, 190, 187);
-}
-
-.profile {
-    position: absolute;
-    left : 82%; 
-    top : 3%;
-    height: 6%;
-    width : 3%;
-}
-.profile:hover {
-    opacity : 0.7;
-}
-
-.linkedin {
-    position: absolute;
-    left : 87%; 
-    top : 3%;
-    height: 6%;
-    width : 3%;
-}
-.linkedin:hover {
-    opacity : 0.7;
-}
-
-.insta {
-    position: absolute;
-    left : 92%; 
-    top : 3%;
-    height: 6%;
-    width : 3%;
-}
-.insta:hover {
-    opacity : 0.7;
-}
-
-hr {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top : 10.5%;
-    left : 0%;
-    background-color: rgb(155, 154, 152);
-    border : 0px;
+  background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
+  background-size: cover;
+  margin: 0;
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  justify-self: unset;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    top : -13%;
-    left : auto;
-    font-size: 40px;
-    letter-spacing: 3px;
-    font-family: poppins;
-    color :rgb(234, 233, 231);
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(234, 233, 231);
+  font-size: 40px;
+  letter-spacing: 3px;
 }
 a:hover {
-    color :rgb(19, 245, 245);
+  color: rgb(19, 245, 245);
 }
 
-.scroll_link{
-    left : 33vw;
+.blur-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
 }
 
-.about {
+h2, .sub {
+  color: rgb(194, 245, 240);
+  cursor: pointer;
+  left: 50%;
+}
+h2:hover, .sub:hover {
+  color: aqua;
+}
+
+.contain{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 10.5%;
+  background-color: rgb(155, 154, 152);
+  border: 0;
+}
+
+/* Header Text */
+#head1, #iam, #main, #sub {
+  position: relative;
+  cursor: default;
+}
+#head1 {
+  top: 2%;
+  left: 3%;
+  font-size: 40px;
+  color: rgb(133, 132, 131);
+}
+#iam {
+  top: 13%;
+  left: 55.4%;
+  font-size: 50px;
+  color: rgb(191, 190, 187);
+}
+#main {
+  top: -2%;
+  left: 55%;
+  font-size: 90px;
+  letter-spacing: 3px;
+  color: rgb(228, 226, 223);
+  transition: 1s;
+}
+#main:hover {
+  font-size: 95px;
+  color: rgb(244, 243, 240);
+  letter-spacing: 4px;
+}
+#sub {  
+    top: -14%;
+    left: 56%;
+    font-size: 22px;
+    letter-spacing: 24px;
+    color: rgb(191, 190, 187);
+}
+
+.scroll_link {
     position: relative;
-    top : 40%;
-    left : 1%;
-    color : white;
+    z-index: 2; /* Must be above the .blur-overlay z-index of 0 */
+    top: -13vh;
+    left: 33vw;
+    color: rgb(234, 233, 231);
+    font-size: 40px;
     font-family: poppins;
-    width: 150%;
-    padding-left: 1%;
-    height: 110%;
-    font-size: 20px;
-    background-color: transparent;
-    border: 0px #ccc solid;
-    border-radius: 5px;
-    line-height: 40px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+
+/* Social Icons */
+.profile, .linkedin, .insta {
+  position: absolute;
+  top: 3%;
+  height: 6%;
+  width: 3%;
+}
+.profile:hover, .linkedin:hover, .insta:hover {
+  opacity: 0.7;
+}
+.profile { left: 82%; }
+.linkedin { left: 87%; }
+.insta { left: 92%; }
+
+/* Profile Pic */
+.profile_pic {
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 14px solid rgb(99, 103, 101);
+  box-shadow: 0 4px 10px;
+  transition: 2s;
+}
+.profile_pic:hover {
+  width: 280px;
+  height: 280px;
+}
+
+/* Section Containers */
+.about, .skills, .projects, .SMS {
+  position: relative;
+  color: white;
+  font-family: poppins;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+}
+.about {
+  width: 150%;
+  padding-left: 1%;
+  height: 110%;
+  font-size: 20px;
+  line-height: 40px;
 }
 .skills {
-    position: relative;
-    top : 50%;
-    height : 202%;
+  top: 50%;
+  height: 202%;
 }
-
 .projects {
-    position: relative;
-    top : 70%;
-    height : 212%;
-    width: 164%;
+  top: 70%;
+  height: 212%;
+  width: 164%;
 }
-.hotel_out{
-    position: absolute;
-    top : 21%;
-    left : 72%;
-    height: 83%;
-    width : 25%;
-    border-radius: 25px;
-}
-.hotel_code {
-    position: relative;
-    top : 12vh;
-    left : -13vw;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-.sms_code {
-    position: relative;
-    top : 23vh;
-    left : -20vh;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
 .SMS {
-    position: relative;
-    top : 68%;
-    height : 220%;
-    width: 164%;
+  top: 68%;
+  height: 220%;
+  width: 164%;
 }
 
-.SMS_out {
-    position: absolute;
-    top : 23%;
-    left : -30%;
-    height: 89%;
-    width : 30%;
-    border-radius: 25px;
+/* Project Previews */
+.hotel_out, .SMS_out {
+  position: absolute;
+  height: 83%;
+  width: 25%;
+  border-radius: 25px;
 }
+.hotel_out { top: 21%; left: 72%; }
+.SMS_out { top: 23%; left: -30%; height: 89%; width: 30%; }
 
 .SMS_desc {
-    padding-left: 20px;
-    position: absolute;
-    top : 1%;
-    left : 23%;
-    border : 0px #ccc solid;
-    height: 93%;
-    width : 75%;
+  position: absolute;
+  top: 1%;
+  left: 23%;
+  padding-left: 20px;
+  height: 93%;
+  width: 75%;
 }
 
-h2 {
-    color :rgb(194, 245, 240);
-    cursor: pointer;
+/* Code Text */
+.hotel_code, .sms_code {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
-h2:hover {
-    color: aqua;
+.hotel_code {
+  top: 12vh;
+  left: -13vw;
 }
-
-.sub{
-    text-align: center;
-    color :rgb(194, 245, 240);
-    cursor: pointer;
-}
-
-@media screen and (max-width : 768px) {
-
-    body {
-        background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
-        /* background-color: rgb(81, 79, 79); */
-        background-size: cover;
-        background-color: #201f1f;
-        height: 200%;
-    }
-
-
-    hr {
-        top : 8vh;
-        width: 115vw;
-    }
-
-    .profile {
-        position: absolute;
-        left : 70%; 
-        top : 2.5%;
-    }
-    .profile:hover {
-        opacity : 0.7;
-    }
-    
-    .linkedin {
-        position: absolute;
-        left : 85vw; 
-        top : 2.5%;
-    }
-    .linkedin:hover {
-        opacity : 0.7;
-    }
-    
-    .insta {
-        position: absolute;
-        left : 100vw; 
-        top : 2.5%;
-    }
-    .insta:hover {
-        opacity : 0.7;
-    }
-    
-
-    .profile_pic {  
-        border : 16px rgb(99, 103, 101) solid;
-        position: absolute;
-        align-items: center;
-        top : 16%;
-        left : 6%;
-        width : 190px;
-        height : 190px;
-        border-radius: 50%;
-        box-shadow: 0 4 10px;
-    }
-
-    #head1 {
-        position: relative;
-        top : 0.5%;
-        left : 5%;
-        font-size: 40px;
-        font-family: poppins;
-        color :rgb(116, 114, 112);
-    }
-
-    #iam {
-        cursor: pointer;
-        position: relative;
-        top : 35vh;
-        left : 16%;
-        font-size: 25px;
-        letter-spacing: 3px;
-        font-family: poppins;
-        color :rgb(191, 190, 187);
-    }
-
-    #main {
-        position: relative;
-        top : 30vh;
-        line-height: 1.2;
-        left : 14.8%;
-        font-size: 65px;
-        letter-spacing: 5px;
-        font-family: poppins;
-        color :rgb(223, 221, 217);
-    }
-    #main:hover {
-        font-size: 60px;
-        color :rgb(244, 243, 240);
-        letter-spacing: 6px;
-        transition: 1s;
-    }
-
-    #sub {
-        position: relative;
-        top : 25vh;
-        left : 17%;
-        font-size: 25px;
-        letter-spacing: 4px;
-        line-height: 1.2;
-        font-family: poppins;
-        color :rgb(191, 190, 187);
-    }
-    
-    .line {
-        position: absolute;
-        border-radius: 4px;
-        width: 54%;
-        height: 23px;
-        top : 4.3%;
-        left : 56%;
-    }
-    .line2 {
-        position: absolute;
-        width: 54%;
-        height: 2px;
-        top : 6%;
-        left : 56%;
-    }
-
-    a {
-        cursor: pointer;
-        position: relative;
-        top : 11%;
-        left : 0%;
-        font-size: 21px;
-        letter-spacing: 3px;
-        font-family: poppins;
-        color :rgb(191, 190, 187);
-    }
-    a:hover {
-        color :rgb(19, 245, 245);
-    }
-
-    .scroll_link{
-        left : 10vw;
-        top : 25vh;
-        font-size: 22px;
-    }
-
-    .about {
-        position: relative;
-        top: 50vh;
-        font-size: 15px;
-        line-height: 30px;
-    }
-    
-    .skills {
-        position: relative;
-        top : 20%;
-        height : 105%;
-    }
-    .hotel_out{
-        position: absolute;
-        top : 37%;
-        left : 81%;
-        height: 15%;
-        border : 3px #ccc solid;
-        width : 15%;
-        border-radius: 10px;
-    }
-    .hotel_out:hover {
-        position: absolute;
-        top : 10%;
-        left : 10%;
-        height: 80%;
-        width : 90%;
-        border-radius: 10px;
-    }
-
-    .SMS {
-        position: relative;
-        left : -110px;
-        top : 30%;
-        height : 220%;
-        width: 190%;
-    }
-
-    .SMS_out {
-        position: relative;
-        top : 21.3%;
-        left : 85%;
-        height: 5%;
-        width : 15%;
-        border : 3px #ccc solid;
-        border-radius: 10px;
-    }
-    .SMS_out:hover {
-        position: relative;
-        top : 0%;
-        left : 1%;
-        height: 23%;
-        width : 100%;
-        border-radius: 8px;
-    }
-
-    .hotel_code {
-        position: relative;
-        top : 9%;
-        left : -12%;
-        font-size: 15px;
-        letter-spacing: 1px;
-    }
-
-    .sms_code {
-        position: relative;
-        top : 4.9%;
-        left : 14%;
-        font-size: 20px;
-        letter-spacing: 0px;
-    }
-
+.sms_code {
+  top: 23vh;
+  left: -20vh;
 }
 
+.padarth{
+  background-color: aqua;
+}
 
-
+/* Shared Card Style */
 .card {
-    background: transparent;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  top: 40vh;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 4vh;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 15px rgba(3, 3, 3, 0.05);
+  border: 2px solid #ccc;
+}
+
+/* Lists and Layouts */
+ul {
+  display: flex;
+  list-style: none;
+  gap: 10vw;
+  padding-left: 15vw;
+}
+.logos {
+  height: 20vh;
+  width: 16vw;
+  margin-left: 4vw;
+  object-fit: contain;
+}
+
+.proj_height {
+  height: 8vh;
+  padding-top: 0vh;
+  background-color: rgb(90, 91, 92);
+}
+.proj_container, .skill_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.proj_container { gap: 11vw;}
+.skill_container { gap: 2vw; row-gap: 5vw; margin-left: -4vw; }
+
+.proj, .HMS_IMG {
+  width: 42vh;
+  height: 30vh;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+.proj:hover{
+    filter: blur(5px);
+}
+
+.hover_btn{
+    position: fixed;
+    display: none;
+    margin-top: 0px;
+    cursor: pointer;
     backdrop-filter: blur(50px);
+}
+
+.btn1{
     top: 40vh;
-    height: auto;
-    padding: 1.5em;
-    border-radius: 12px;
-    box-shadow: 0 20px 15px rgba(3, 3, 3, 0.05);
-    margin-bottom: 1.5em;
-    margin-left: 3vh;
-    border: 2px #ccc solid;
-  }
+    left: 12vw;
+}
 
-  ul{
-    display: flex;
-    list-style: none;
-    gap: 10vw;
-    padding-left: 15vw;
-  }
+.btn2{
+    top: 40vh;
+    left: 43vw;
+}
 
-  .logos{
-    height: 16vh;
+.btn3{
+    top: 40vh;
+    left: 74vw;
+}
+
+
+.HMS_main:hover .hover_btn,
+.SMS_main:hover .hover_btn,
+.Padarth_main:hover .hover_btn{
     display: block;
-    width: 12vw;
-    margin-left: 4vw;
-  }
+}
 
-  .proj_height{
-    height: 8vh;
-    padding-top: 0vh;
-    background-color: rgb(90, 91, 92);
-  }
 
-  .proj_container{
-    display: flex;
-    gap: 11vw;
-    flex-wrap: wrap;
-  }
-
-  .skill_container{
-    display: flex;
-    gap: 7vw;
-    flex-wrap: wrap;
-  }
- 
- .proj{
-    width: 42vh;
-    height: 30vh;
-    gap: 100px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
- }
-
- .HMS {
-    display:none;
-    position:relative;
-    top: -50vh;
-    left: -2vw;
-    width: 85vw;
-    background-color: rgb(69, 69, 69);
-    z-index: 999;
- }
-
- .HMS_main:hover .HMS {
-    display:block;
- }
-
- .SMS {
-    display:none;
-    position:relative;
-    top: -120vh;
-    left: -2vw;
-    width: 85vw;
-    background-color: rgb(69, 69, 69);
- }
-
- .SMS_main:hover .SMS {
-    display:block;
- }
-
- .padarth {
-    display:none;
-    position:relative;
-    top: -120vh;
-    left: -2vw;
-    width: 85vw;
-    background-color: rgb(69, 69, 69);
- }
-
- .Padarth_main:hover .padarth {
-    display:block;
- }
-
- .email{
-    width:35vw;
-    height: 8vh;
-    background: transparent;
-    backdrop-filter: blur(50px);
-    color:aliceblue;
+.size{
     font-size: 20px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-left: 27vw;
- }
+    width: 20vw;
+}
 
+/* Inputs */
+.email {
+  width: 35vw;
+  height: 8vh;
+  margin-left: 27vw;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  color: aliceblue;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 15vh;
+  height: 6vh;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  color: rgb(134, 194, 247);
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.more{
+  width:10vw;
+  position: fixed;
+  bottom: 2vh;
+}
+
+.back{
+  width:3vw;
+  position:fixed;
+  right: 10px;
+  top: 3vh;
+}
+
+.info{
+  margin-top: 10px;
+  background-color:rgb(52, 55, 63);
+  backdrop-filter: blur(70px);
+  font-size: 16px;
+  line-height: 1.5;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 82vh;
+  width: 85vw;
+  visibility:hidden;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-color: #201f1f;
+    height: 200%;
+  }
+
+  hr { top: 8vh; width: 115vw; }
+
+  .profile { left: 70%; top: 2.5%; }
+  .linkedin { left: 85vw; top: 2.5%; }
+  .insta { left: 100vw; top: 2.5%; }
+
+  .profile_pic {
+    top: 16%;
+    left: 6%;
+    width: 190px;
+    height: 190px;
+    border: 16px solid rgb(99, 103, 101);
+  }
+
+  .logos {
+  height: 10vh;
+  width: 14vw;
+  margin-left: 4vw;
+  object-fit: fill;
+}
+
+  #head1 { top: 0.5%; left: 5%; font-size: 40px; color: rgb(116, 114, 112); }
+  #iam { top: 35vh; left: 16%; font-size: 25px; }
+  #main { top: 30vh; left: 14.8%; font-size: 65px; letter-spacing: 5px; }
+  #main:hover { font-size: 60px; letter-spacing: 6px; }
+  #sub { top: 25vh; left: 17%; font-size: 25px; letter-spacing: 4px; }
+
+  .scroll_link { top: 25vh; left: 10vw; font-size: 22px; }
+  .about { top: 50vh; font-size: 15px; line-height: 30px; }
+
+  .skills { top: 20%; height: 105%; }
+  .hotel_out {
+    top: 37%;
+    left: 81%;
+    height: 15%;
+    width: 15%;
+    border-radius: 10px;
+  }
+  .hotel_out:hover {
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 90%;
+  }
+
+  .SMS {
+    left: -110px;
+    top: 30%;
+    width: 190%;
+  }
+
+  .SMS_out {
+    top: 21.3%;
+    left: 85%;
+    height: 5%;
+    width: 15%;
+    border-radius: 10px;
+  }
+  .SMS_out:hover {
+    top: 0%;
+    left: 1%;
+    height: 23%;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .hotel_code { top: 9%; left: -12%; font-size: 15px; }
+  .sms_code { top: 4.9%; left: 14%; font-size: 20px; }
+
+  .card{
+    margin-left: 5.5vw;
+  }
+
+  .size{
+    width: 40vh;
+  } 
+
+  .more{
+    width: 15vh;
+  }
+
+  .btn1{
+    top:28vh;
+    left:16vh;
+  }
+
+  .btn2{
+    top:76vh;
+    left: 16vh;
+  }
+
+  .btn3{
+    top:121vh;
+    left: 16vh;
+  }
+
+  .info{
+    top: 14vh;
+    left:-1vh;
+    height: 145vh;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .back{
+    width:8vh;
+    position:fixed;
+    top: 143vh;
+
+  }
+}
