@@ -5,7 +5,12 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("QqypxDxvf7YLfhIgW");
+        })();
+    </script>
 </head>
 
 <body>
@@ -125,13 +130,13 @@
                     }
                 </script>
             </div>
-            
+
 
             <br><button class="more">View More</button>
         </div>
 
         <div class="about card info" id='padarth'>
-           
+
             Padarth is a web-based ingredient analysis tool that allows users to scan,<br>
             upload, and search for ingredients to retrieve detailed information and know<br>
             how safe an ingredient is for health.<br>
@@ -171,7 +176,7 @@
 
 
             Throughout this project development, I learned a lot, including Servlets,<br>
-             JSP, and API integration.
+            JSP, and API integration.
 
             <button class="back" onclick="padarthInVisible()">X</button>
             <script>
@@ -260,25 +265,32 @@
 
 
 
-    <div class="about card">
-        <h2 class="sub contain">Contact Me</h2>
-            <a href="mailto:ketanbidave07@gmail.com" target="_blank">
-                <button class="email">
-                    ✉ Email Me
-                </button>
-            </a>
+    <div class="about card" style="display: flex; justify-content: center; align-items: center;">
+    
+        <div class="subdiv">
+            <h2 class="sub contain">Contact Me</h2><br>
+            <form id="send_email">
+                <input type="text" placeholder="Your Name" class="form" name="name" required><br><br>
+                <input type="password" placeholder="Your Email" class="form" name="email" required><br><br>
+                <textarea placeholder="Your Message" name="message" cols="67" rows="30" class="form textarea"
+                    required></textarea><br><br>
+                <button class="small_adj">Send</button><br><br><br>
+            </form>
+            <script>
+                document.getElementById('send_email').addEventListener('submit', function (e) {
+                    e.preventDefault();
 
-            <a href="https://www.linkedin.com/in/ketan-bidave-08397430a" target="_blank">
-            <button class="email">
-                <i class="fab fa-linkedin" style="font-size: 21px;"></i> Linkedin
-            </button>
-            </a>
-
-            <a href="#" target="_blank">
-            <button class="email">
-                𝕏 Twitter
-            </button>
-        </a>
+                    emailjs.sendForm('service_yvlvep1', 'template_li2ur37', this)
+                        .then(() => {
+                            alert('Thank You!');
+                            this.reset();
+                        }, (error) => {
+                            console.error('Failed to send message:', error);
+                            alert('Oops! Something went wrong.');
+                        });
+                });
+            </script>
+        </div>
     </div>
 </body>
 
