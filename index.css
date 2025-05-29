@@ -20,6 +20,7 @@ a {
   font-size: 40px;
   letter-spacing: 3px;
 }
+
 a:hover {
   color: rgb(19, 245, 245);
 }
@@ -32,19 +33,22 @@ a:hover {
   z-index: 0;
 }
 
-h2, .sub {
+h2,
+.sub {
   color: rgb(194, 245, 240);
   cursor: pointer;
   left: 50%;
 }
-h2:hover, .sub:hover {
+
+h2:hover,
+.sub:hover {
   color: aqua;
 }
 
-.contain{
-    width: auto;
-    display: flex;
-    justify-content: center;
+.contain {
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 hr {
@@ -57,22 +61,28 @@ hr {
 }
 
 /* Header Text */
-#head1, #iam, #main, #sub {
+#head1,
+#iam,
+#main,
+#sub {
   position: relative;
   cursor: default;
 }
+
 #head1 {
   top: 2%;
   left: 3%;
   font-size: 40px;
   color: rgb(133, 132, 131);
 }
+
 #iam {
   top: 13%;
   left: 55.4%;
   font-size: 50px;
   color: rgb(191, 190, 187);
 }
+
 #main {
   top: -2%;
   left: 55%;
@@ -81,46 +91,67 @@ hr {
   color: rgb(228, 226, 223);
   transition: 1s;
 }
+
 #main:hover {
   font-size: 95px;
   color: rgb(244, 243, 240);
   letter-spacing: 4px;
 }
-#sub {  
-    top: -14%;
-    left: 56%;
-    font-size: 22px;
-    letter-spacing: 24px;
-    color: rgb(191, 190, 187);
+
+#sub {
+  top: -14%;
+  left: 56%;
+  font-size: 22px;
+  letter-spacing: 24px;
+  color: rgb(191, 190, 187);
 }
 
 .scroll_link {
-    position: relative;
-    z-index: 2; /* Must be above the .blur-overlay z-index of 0 */
-    top: -13vh;
-    left: 33vw;
-    color: rgb(234, 233, 231);
-    font-size: 40px;
-    font-family: poppins;
-    letter-spacing: 3px;
-    text-decoration: none;
+  position: relative;
+  z-index: 2;
+  /* Must be above the .blur-overlay z-index of 0 */
+  top: -13vh;
+  left: 33vw;
+  color: rgb(234, 233, 231);
+  font-size: 40px;
+  font-family: poppins;
+  letter-spacing: 3px;
+  text-decoration: none;
 }
 
 
 /* Social Icons */
-.profile, .linkedin, .insta, .options {
+.profile,
+.linkedin,
+.insta,
+.options {
   position: absolute;
   top: 4%;
   height: 6%;
   width: 3%;
 }
-.profile:hover, .linkedin:hover, .insta:hover {
+
+.profile:hover,
+.linkedin:hover,
+.insta:hover {
   opacity: 0.7;
 }
-.profile { left: 82%; }
-.linkedin { left: 87%; }
-.insta { left: 92%; }
-.options { left: 96.5%;}
+
+.profile {
+  left: 82%;
+}
+
+.linkedin {
+  left: 87%;
+}
+
+.insta {
+  left: 92%;
+}
+
+.options {
+  left: 96.5%;
+}
 
 /* Profile Pic */
 .profile_pic {
@@ -133,15 +164,19 @@ hr {
   border: 19px solid rgb(99, 103, 101);
   box-shadow: 0 4px 10px;
   transition: 2s;
-  border-style:groove;
+  border-style: groove;
 }
+
 .profile_pic:hover {
   width: 280px;
   height: 280px;
 }
 
 /* Section Containers */
-.about, .skills, .projects, .SMS {
+.about,
+.skills,
+.projects,
+.SMS {
   position: relative;
   color: white;
   font-family: poppins;
@@ -149,22 +184,26 @@ hr {
   border: 0;
   border-radius: 5px;
 }
+
 .about {
-  width: 150%;
+  width: 89vw;
   padding-left: 1%;
   height: 110%;
   font-size: 20px;
   line-height: 40px;
 }
+
 .skills {
   top: 50%;
   height: 202%;
 }
+
 .projects {
   top: 70%;
   height: 212%;
   width: 164%;
 }
+
 .SMS {
   top: 68%;
   height: 220%;
@@ -172,14 +211,25 @@ hr {
 }
 
 /* Project Previews */
-.hotel_out, .SMS_out {
+.hotel_out,
+.SMS_out {
   position: absolute;
   height: 83%;
   width: 25%;
   border-radius: 25px;
 }
-.hotel_out { top: 21%; left: 72%; }
-.SMS_out { top: 23%; left: -30%; height: 89%; width: 30%; }
+
+.hotel_out {
+  top: 21%;
+  left: 72%;
+}
+
+.SMS_out {
+  top: 23%;
+  left: -30%;
+  height: 89%;
+  width: 30%;
+}
 
 .SMS_desc {
   position: absolute;
@@ -191,21 +241,24 @@ hr {
 }
 
 /* Code Text */
-.hotel_code, .sms_code {
+.hotel_code,
+.sms_code {
   position: relative;
   font-size: 20px;
   letter-spacing: 1px;
 }
+
 .hotel_code {
   top: 12vh;
   left: -13vw;
 }
+
 .sms_code {
   top: 23vh;
   left: -20vh;
 }
 
-.padarth{
+.padarth {
   background-color: aqua;
 }
 
@@ -230,6 +283,7 @@ ul {
   gap: 10vw;
   padding-left: 15vw;
 }
+
 .logos {
   height: 20vh;
   width: 16vw;
@@ -242,59 +296,76 @@ ul {
   padding-top: 0vh;
   background-color: rgb(90, 91, 92);
 }
-.proj_container, .skill_container {
+
+.proj_container,
+.skill_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.proj_container { gap: 11vw;}
-.skill_container { gap: 2vw; row-gap: 5vw; margin-left: -4vw; }
 
-.proj, .HMS_IMG {
+.proj_container {
+  gap: 11vw;
+}
+
+.skill_container {
+  gap: 2vw;
+  row-gap: 5vw;
+  margin-left: -4vw;
+}
+
+.proj,
+.HMS_IMG {
   width: 42vh;
   height: 30vh;
   border: 2px solid #ccc;
   border-radius: 20px;
 }
-.proj:hover{
-    filter: blur(5px);
+
+.proj:hover {
+  filter: blur(5px);
 }
 
-.hover_btn{
-    position: fixed;
-    display: none;
-    margin-top: 0px;
-    cursor: pointer;
-    backdrop-filter: blur(50px);
+.hover_btn {
+  position: fixed;
+  display: none;
+  margin-top: 0px;
+  cursor: pointer;
+  backdrop-filter: blur(50px);
 }
 
-.btn1{
-    top: 40vh;
-    left: 12vw;
+.btn1 {
+  top: 40vh;
+  left: 12vw;
 }
 
-.btn2{
-    top: 40vh;
-    left: 43vw;
+.btn2 {
+  top: 40vh;
+  left: 43vw;
 }
 
-.btn3{
-    top: 40vh;
-    left: 74vw;
+.btn3 {
+  top: 40vh;
+  left: 74vw;
 }
 
+.btn4 {
+  top: 114vh;
+  left: 32vw;
+}
 
+.HMS_J_main:hover .hover_btn,
 .HMS_main:hover .hover_btn,
 .SMS_main:hover .hover_btn,
-.Padarth_main:hover .hover_btn{
-    display: block;
+.Padarth_main:hover .hover_btn {
+  display: block;
 }
 
 
-.size{
-    font-size: 20px;
-    width: 20vw;
+.size {
+  font-size: 20px;
+  width: 20vw;
 }
 
 /* Inputs */
@@ -323,63 +394,61 @@ button {
   cursor: pointer;
 }
 
-.more{
-  width:10vw;
+.more {
+  width: 10vw;
   position: fixed;
   bottom: 2vh;
 }
 
-.back{
-  width:3vw;
-  position:fixed;
+.back {
+  width: 3vw;
+  position: fixed;
   right: 10px;
   top: 3vh;
 }
 
-.info{
+.info {
   margin-top: 10px;
-  background-color:rgb(52, 55, 63);
+  background-color: rgb(52, 55, 63);
   backdrop-filter: blur(70px);
   font-size: 16px;
   line-height: 1.5;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   height: 82vh;
   width: 85vw;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .form {
-    border: 1px #ccc solid;
-    width: 40vw;
-    height: 6vh;
-    font-size: 20px;
-    border-radius: 8px;
-    background-color: transparent;
-    color: aliceblue;
-    flex: 1 0 10rem;
+  border: 1px #ccc solid;
+  width: 40vw;
+  height: 6vh;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: aliceblue;
+  flex: 1 0 10rem;
 }
 
-.textarea{
-  height:20vh;
+.textarea {
+  height: 20vh;
   resize: none;
 }
 
-.form::placeholder{
+.form::placeholder {
   font-size: 20px;
 }
 
 .back {
-    width: 30%;
-    height: 57%;
-    /* background-color: rgb(127, 229, 243); */
-    padding-top: 20px;
-    padding-bottom: 90px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 1px #413f3f solid;
-    box-shadow: 10px 10px 15px #494848;
+  /* background-color: rgb(127, 229, 243); */
+  padding-top: 20px;
+  padding-bottom: 90px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px #413f3f solid;
+  box-shadow: 10px 10px 15px #494848;
 }
 
 /* Responsive */
@@ -390,38 +459,92 @@ button {
     height: 200%;
   }
 
-  hr { top: 7vh; width: 100vw; }
+  hr {
+    top: 7vh;
+    width: 100vw;
+  }
 
-  .profile { left: 70%; top: 2.5%; }
-  .linkedin { left: 85vw; top: 2.5%; }
-  .insta { left: 100vw; top: 2.5%; }
+  .profile {
+    left: 70%;
+    top: 2.5%;
+  }
+
+  .linkedin {
+    left: 85vw;
+    top: 2.5%;
+  }
+
+  .insta {
+    left: 100vw;
+    top: 2.5%;
+  }
 
   .profile_pic {
-    top: 15%;
-    left: 6%;
-    width: 170px;
-    height: 170px;
+    top: 13vh;
+    left: 3vh;
+    width: 23vh;
+    height: 23vh;
     border: 13px solid rgb(99, 103, 101);
-    border-style:groove;
+    border-style: groove;
   }
 
   .logos {
-  height: 10vh;
-  width: 14vw;
-  margin-left: 4vw;
-  object-fit: fill;
-}
+    height: 10vh;
+    width: 14vw;
+    margin-left: 4vw;
+    object-fit: fill;
+  }
 
-  #head1 { top: 0.5%; left: 5%; font-size: 37px; color: rgb(116, 114, 112); }
-  #iam { top: 31vh; left: 16%; font-size: 25px; }
-  #main { top: 26.5vh; left: 14.8%; font-size: 65px; letter-spacing: 6px; line-height: 1.2;}
-  #main:hover { font-size: 70px; letter-spacing: 6px; }
-  #sub { top: 21vh; left: 17%; font-size: 25px; letter-spacing: 4px; }
+  #head1 {
+    top: 1vh;
+    left: 1vh;
+    font-size: 37px;
+    color: rgb(116, 114, 112);
+  }
 
-  .scroll_link { top: 19vh; left: 10vw; font-size: 21px; }
-  .about { top: 50vh; font-size: 15px; line-height: 30px; }
+  #iam {
+    top: 30vh;
+    left: 5vh;
+    font-size: 25px;
+  }
 
-  .skills { top: 20%; height: 105%; }
+  #main {
+    top: 25vh;
+    left: 4.7vh;
+    font-size: 65px;
+    letter-spacing: 6px;
+    line-height: 1.2;
+  }
+
+  #main:hover {
+    font-size: 70px;
+    letter-spacing: 6px;
+  }
+
+  #sub {
+    top: 19vh;
+    left: 5vh;
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+
+  .scroll_link {
+    top: 18vh;
+    left: 5vh;
+    font-size: 21px;
+  }
+
+  .about {
+    top: 35vh;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .skills {
+    top: 20%;
+    height: 105%;
+  }
+
   .hotel_out {
     top: 37%;
     left: 81%;
@@ -429,6 +552,7 @@ button {
     width: 15%;
     border-radius: 10px;
   }
+
   .hotel_out:hover {
     top: 10%;
     left: 10%;
@@ -449,6 +573,7 @@ button {
     width: 15%;
     border-radius: 10px;
   }
+
   .SMS_out:hover {
     top: 0%;
     left: 1%;
@@ -457,67 +582,106 @@ button {
     border-radius: 8px;
   }
 
-  .hotel_code { top: 9%; left: -12%; font-size: 15px; }
-  .sms_code { top: 4.9%; left: 14%; font-size: 20px; }
+  .hotel_code {
+    top: 9%;
+    left: -12%;
+    font-size: 15px;
+  }
 
-  .card{
+  .sms_code {
+    top: 4.9%;
+    left: 14%;
+    font-size: 20px;
+  }
+
+  .card {
     margin-left: 5.5vw;
   }
 
-  .size{
+  .size {
     width: 40vh;
-  } 
-
-  .more{
-    width: 15vh;
   }
 
-  .btn1{
-    top:26vh;
-    left:13vh;
+  .more {
+    width: auto;
+    height: auto;
   }
 
-  .btn2{
-    top:69vh;
+  .hover_btn{
+    width: auto;
+    height: auto;
+  }
+
+  .small_adj{
+    width: auto;
+    height: auto;
+  }
+
+  .btn1 {
+    top: 26vh;
     left: 13vh;
   }
 
-  .btn3{
-    top:112vh;
+  .btn2 {
+    top: 69vh;
     left: 13vh;
   }
 
-  .info{
-    top: 14vh;
-    left:-1vh;
+  .btn3 {
+    top: 112vh;
+    left: 13vh;
+  }
+
+  .btn4 {
+    top: 155vh;
+    left: 13vh;
+  }
+
+  .info {
+    top: 0vh;
+    left: -2.6vh;
     height: 145vh;
     font-size: 14px;
     line-height: 2;
   }
 
-  .back{
-    width:8vh;
-    position:fixed;
+  .back {
+    width: 8vh;
+    position: fixed;
     top: 143vh;
   }
 
-  .profile, .linkedin, .insta {
-  position: absolute;
-  top: 2.2%;
+  .profile,
+  .linkedin,
+  .insta {
+    position: absolute;
+    top: 2.2%;
   }
 
-  .profile:hover, .linkedin:hover, .insta:hover {
+  .profile:hover,
+  .linkedin:hover,
+  .insta:hover {
     opacity: 0.7;
   }
-  .profile { left: 62%; }
-  .linkedin { left: 75%; }
-  .insta { left: 88%; }
 
-  .card{
-    width: 35.5vh;
+  .profile {
+    left: 62%;
   }
 
-  .proj, .HMS_IMG {
+  .linkedin {
+    left: 75%;
+  }
+
+  .insta {
+    left: 88%;
+  }
+
+  .card {
+    width: 75vw;
+  }
+
+  .proj,
+  .HMS_IMG {
     width: 34vh;
     height: 25vh;
     border: 2px solid #ccc;
@@ -525,7 +689,7 @@ button {
     margin-left: 0vh;
   }
 
-  .size{
+  .size {
     font-size: 18px;
     width: 30vh;
     margin-left: 1vh;
@@ -537,18 +701,18 @@ button {
     margin-left: 18vw;
   }
 
-  .textarea{
-    height:15vh;
+  .textarea {
+    height: 15vh;
     resize: none;
   }
 
-  .small_adj{
+  .small_adj {
     margin-left: 16vw;
-    width:20vw;
+    width: 20vw;
   }
 
-  .form{
-    width:50vw;
+  .form {
+    width: 50vw;
   }
 
 }
