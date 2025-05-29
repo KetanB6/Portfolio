@@ -95,6 +95,7 @@
     <div class="about card">
         <h2 class="sub contain">Projects</h2><br>
         <div class="proj_container">
+
             <div class="Padarth_main">
 
                 <img src="https://github.com/KetanB6/Portfolio/blob/main/Padarth.png?raw=true" alt="Padarth"
@@ -108,14 +109,13 @@
                 </script>
             </div>
 
-            <div class="HMS_main">
-
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS.png?raw=true" alt="HMS" class="proj">
-                <h3 class="size">Hotel Management system</h3>
-                <button class="hover_btn btn2" onclick="hmsVisible()">Details</button>
+            <div class="HMS_J_main">
+                <img src="HMS_J.png" alt="HMS_JAVA" class="proj">
+                <h3 class="size">Hotel Management System With JDBC</h3>
+                <button class="hover_btn btn2" onclick="hms_j_Visible()">Details</button>
                 <script>
-                    function hmsVisible() {
-                        document.getElementById('hms').style.visibility = 'visible';
+                    function hms_j_Visible() {
+                        document.getElementById('hms_j').style.visibility = 'visible';
                     }
                 </script>
             </div>
@@ -131,8 +131,33 @@
                 </script>
             </div>
 
+            <div class="HMS_main" id = "more" style="display:none;">
 
-            <br><button class="more">View More</button>
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS.png?raw=true" alt="HMS" class="proj">
+                <h3 class="size">Hotel Management system in C++</h3>
+                <button class="hover_btn btn4" onclick="hmsVisible()">Details</button>
+                <script>
+                    function hmsVisible() {
+                        document.getElementById('hms').style.visibility = 'visible';
+                    }
+                </script>
+            </div>
+
+
+            <br><button class="more" onclick="unhide()" id="more_btn">View More</button>
+            <br><button class="more" onclick="hide()" id="less" style="visibility: hidden;">Show Less</button>
+            <script>
+                function unhide(){
+                    document.getElementById('more').style.display='block';
+                    document.getElementById('more_btn').style.visibility='hidden';
+                    document.getElementById('less').style.visibility='visible';
+                }
+                function hide(){
+                    document.getElementById('more').style.display='none';
+                    document.getElementById('more_btn').style.visibility='visible';
+                    document.getElementById('less').style.visibility='hidden';
+                }
+            </script>
         </div>
 
         <div class="about card info" id='padarth'>
@@ -261,12 +286,45 @@
                 }
             </script>
         </div>
+
+        <div class="about card info" id='hms_j'>
+            a Hotel Reservation System in Java that connects to a MySQL database, allowing hotel staff to manage
+            room<br>
+            bookings efficiently. This console-based application mimics a real-world reservation workflow,
+            supporting<br>
+            core hotel operations like room booking, updating reservations, and tracking departures.<br><br>
+
+            <font color="gray">Features</font><br>
+            Room Availability Check: Displays currently unoccupied rooms by cross-referencing the database.<br><br>
+
+            Guest Reservation: Allows users to reserve rooms by entering guest details and selecting from available<br>
+            rooms.<br><br>
+
+            Reservation Management: View a detailed list of current reservations, including guest info, room
+            numbers,<br>
+            and booking dates.<br><br>
+
+            Change Room Functionality: Enables updating room numbers for existing reservations.<br><br>
+
+            Departure Handling: Updates a reservation's status to 'out' and frees up the room.<br><br>
+
+            This is my first JDBC project, where I built a Hotel Reservation System in Java with full CRUD (Create,<br>
+            Read, Update, Delete) functionality using a MySQL database. The application runs in the console.<br>
+
+
+            <button class="back" onclick="hms_j_InVisible()">X</button>
+            <script>
+                function hms_j_InVisible() {
+                    document.getElementById('hms_j').style.visibility = 'hidden';
+                }
+            </script>
+        </div>
     </div>
 
 
 
     <div class="about card" style="display: flex; justify-content: center; align-items: center;">
-    
+
         <div class="subdiv">
             <h2 class="sub contain">Contact Me</h2><br>
             <form id="send_email">
