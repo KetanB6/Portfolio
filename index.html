@@ -99,9 +99,8 @@
             <div class="Padarth_main">
 
                 <img src="https://github.com/KetanB6/Portfolio/blob/main/Padarth.png?raw=true" alt="Padarth"
-                    class="proj">
+                    class="proj" onclick="padarthVisible()">
                 <h3 class="size">Padarth: Ingredient Info. Provider</h3>
-                <button class="hover_btn btn1" onclick="padarthVisible()">Details</button>
                 <script>
                     function padarthVisible() {
                         document.getElementById('padarth').style.visibility = 'visible';
@@ -109,10 +108,22 @@
                 </script>
             </div>
 
+            <div class="Banking_main">
+
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/BankingApp.png?raw=true" alt="BankingApp"
+                    class="proj" onclick="bankingVisible()">
+                <h3 class="size">Banking Application With JDBC</h3>
+                <script>
+                    function bankingVisible() {
+                        document.getElementById('banking').style.visibility = 'visible';
+                    }
+                </script>
+            </div>
+
             <div class="HMS_J_main">
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS_J.png?raw=true" alt="HMS_JAVA" class="proj">
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS_J.png?raw=true" alt="HMS_JAVA" class="proj"
+                    onclick="hms_j_Visible()">
                 <h3 class="size">Hotel Management System With JDBC</h3>
-                <button class="hover_btn btn2" onclick="hms_j_Visible()">Details</button>
                 <script>
                     function hms_j_Visible() {
                         document.getElementById('hms_j').style.visibility = 'visible';
@@ -120,10 +131,10 @@
                 </script>
             </div>
 
-            <div class="SMS_main">
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/SMS.png?raw=true" alt="SMS" class="proj">
+            <div class="SMS_main" id="more1" style="display:none;">
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/SMS.png?raw=true" alt="SMS" class="proj"
+                    onclick="smsVisible()">
                 <h3 class="size">Student Management System</h3>
-                <button class="hover_btn btn3" onclick="smsVisible()">Details</button>
                 <script>
                     function smsVisible() {
                         document.getElementById('sms').style.visibility = 'visible';
@@ -131,11 +142,11 @@
                 </script>
             </div>
 
-            <div class="HMS_main" id = "more" style="display:none;">
+            <div class="HMS_main" id="more2" style="display:none;">
 
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS.png?raw=true" alt="HMS" class="proj">
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS.png?raw=true" alt="HMS" class="proj"
+                    onclick="hmsVisible()">
                 <h3 class="size">Hotel Management system in C++</h3>
-                <button class="hover_btn btn4" onclick="hmsVisible()">Details</button>
                 <script>
                     function hmsVisible() {
                         document.getElementById('hms').style.visibility = 'visible';
@@ -147,15 +158,17 @@
             <br><button class="more" onclick="unhide()" id="more_btn">View More</button>
             <br><button class="more" onclick="hide()" id="less" style="visibility: hidden;">Show Less</button>
             <script>
-                function unhide(){
-                    document.getElementById('more').style.display='block';
-                    document.getElementById('more_btn').style.visibility='hidden';
-                    document.getElementById('less').style.visibility='visible';
+                function unhide() {
+                    document.getElementById('more1').style.display = 'block';
+                    document.getElementById('more2').style.display = 'block';
+                    document.getElementById('more_btn').style.visibility = 'hidden';
+                    document.getElementById('less').style.visibility = 'visible';
                 }
-                function hide(){
-                    document.getElementById('more').style.display='none';
-                    document.getElementById('more_btn').style.visibility='visible';
-                    document.getElementById('less').style.visibility='hidden';
+                function hide() {
+                    document.getElementById('more1').style.display = 'none';
+                    document.getElementById('more2').style.display = 'none';
+                    document.getElementById('more_btn').style.visibility = 'visible';
+                    document.getElementById('less').style.visibility = 'hidden';
                 }
             </script>
         </div>
@@ -318,6 +331,10 @@
                     document.getElementById('hms_j').style.visibility = 'hidden';
                 }
             </script>
+        </div>
+
+        <div class="about card info" id='banking'>
+            BankingApp
         </div>
     </div>
 
