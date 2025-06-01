@@ -103,7 +103,7 @@
                 <h3 class="size">Padarth: Ingredient Info. Provider</h3>
                 <script>
                     function padarthVisible() {
-                        document.getElementById('padarth').style.visibility = 'visible';
+                        document.getElementById('padarth').style.display = 'block';
                     }
                 </script>
             </div>
@@ -115,7 +115,7 @@
                 <h3 class="size">Banking Application With JDBC</h3>
                 <script>
                     function bankingVisible() {
-                        document.getElementById('banking').style.visibility = 'visible';
+                        document.getElementById('banking').style.display = 'block';
                     }
                 </script>
             </div>
@@ -126,7 +126,7 @@
                 <h3 class="size">Hotel Management System With JDBC</h3>
                 <script>
                     function hms_j_Visible() {
-                        document.getElementById('hms_j').style.visibility = 'visible';
+                        document.getElementById('hms_j').style.display = 'block';
                     }
                 </script>
             </div>
@@ -137,7 +137,7 @@
                 <h3 class="size">Student Management System</h3>
                 <script>
                     function smsVisible() {
-                        document.getElementById('sms').style.visibility = 'visible';
+                        document.getElementById('sms').style.display = 'block';
                     }
                 </script>
             </div>
@@ -149,7 +149,7 @@
                 <h3 class="size">Hotel Management system in C++</h3>
                 <script>
                     function hmsVisible() {
-                        document.getElementById('hms').style.visibility = 'visible';
+                        document.getElementById('hms').style.display = 'block';
                     }
                 </script>
             </div>
@@ -174,167 +174,220 @@
         </div>
 
         <div class="about card info" id='padarth'>
+            <div style="width: auto; max-width: 70vw;">
+                Padarth is a web-based ingredient analysis tool that allows users to scan,
+                upload, and search for ingredients to retrieve detailed information and know
+                how safe an ingredient is for health.<br><br>
 
-            Padarth is a web-based ingredient analysis tool that allows users to scan,<br>
-            upload, and search for ingredients to retrieve detailed information and know<br>
-            how safe an ingredient is for health.<br>
+                <font color="gray">Features</font><br>
 
-            <font color="gray">Features</font><br>
-
-            1. Scan Ingredient – Capture an image using a camera, extract text, and get ingredient details.<br>
-
-
-            2. Upload Ingredient – Upload an image directly for analysis.<br>
+                1. Scan Ingredient – Capture an image using a camera, extract text, and get ingredient details.<br>
 
 
-            3. Search Ingredient – Search for ingredients by name.<br>
+                2. Upload Ingredient – Upload an image directly for analysis.<br>
 
 
+                3. Search Ingredient – Search for ingredients by name.<br><br>
 
-            <font color="gray">How It Works</font><br>
+                <font color="gray">How It Works</font><br>
 
-            1. The image is captured/uploaded and converted to Base64.<br>
+                1. The image is captured/uploaded and converted to Base64.<br>
 
+                2. The image is processed to extract text.<br>
 
-            2. The image is processed to extract text.<br>
+                3. Extracted text is sent to Gemini AI for ingredient details.<br>
 
+                4. Processed data is sent to JSP for display.<br><br>
 
-            3. Extracted text is sent to Gemini AI for ingredient details.<br>
+                <font color="gray">Technologies Used</font><br>
 
+                Frontend – HTML, CSS, JavaScript<br>
 
-            4. Processed data is sent to JSP for display.<br>
+                Backend – Java Servlet<br>
 
-            <font color="gray">Technologies Used</font><br>
-
-            Frontend – HTML, CSS, JavaScript<br>
-
-            Backend – Java Servlet<br>
-
-            UI Rendering – JSP (Java Server Pages)<br>
+                UI Rendering – JSP (Java Server Pages)<br><br>
 
 
-            Throughout this project development, I learned a lot, including Servlets,<br>
-            JSP, and API integration.
-
+                Throughout this project development, I learned a lot, including Servlets,
+                JSP, and API integration.
+            </div>
             <button class="back" onclick="padarthInVisible()">X</button>
             <script>
                 function padarthInVisible() {
-                    document.getElementById('padarth').style.visibility = 'hidden';
+                    document.getElementById('padarth').style.display = 'none';
                 }
             </script>
         </div>
 
         <div class="about card info" id='hms'>
-            A Hotel Management System in C++ that efficiently handles various<br>
-            reception-related operations, such as guest management and room management. <br>
-            The program provides an instructions to perform hotel operations.
-            <br><br>
-            Key Features:
-            <br>
-            1. Available Rooms:<br>
-            Displays a list of available rooms along with their price/rent.<br>
+            <div style="width: auto; max-width: 70vw;">
+                A Hotel Management System in C++ that efficiently handles various
+                reception-related operations, such as guest management and room management.
+                The program provides an instructions to perform hotel operations.<br><br>
 
-            2. Room Booking:<br>
-            Allows new bookings and generates a receipt upon successful reservation.<br>
+                Key Features:<br>
+                1. Available Rooms:<br>
+                Displays a list of available rooms along with their price/rent.<br><br>
 
-            3. Cancel Room:<br>
-            Enables guests to cancel their booking, but they must do so within 15 seconds<br>
-            of receipt generation.<br>
+                2. Room Booking:<br>
+                Allows new bookings and generates a receipt upon successful reservation.<br><br>
 
-            4. Departure:<br>
-            Manages guest check-out and updates room availability accordingly.<br>
+                3. Cancel Room:<br>
+                Enables guests to cancel their booking, but they must do so within 15 seconds
+                of receipt generation.<br><br>
 
-            5. Assigned Room List:<br>
-            Displays all rooms along with their current status: booked, canceled,<br>
-            or checked out.<br><br>
-            Developing this project significantly enhanced my problem-solving skills,<br>
-            logical thinking, and object-oriented programming (OOP) concepts. It also provided<br>
-            valuable experience in designing structured and efficient programs.
+                4. Departure:<br>
+                Manages guest check-out and updates room availability accordingly.<br><br>
+
+                5. Assigned Room List:<br>
+                Displays all rooms along with their current status: booked, canceled,
+                or checked out.<br><br>
+
+                Developing this project significantly enhanced my problem-solving skills,
+                logical thinking, and object-oriented programming (OOP) concepts. It also provided
+                valuable experience in designing structured and efficient programs.
+            </div>
             <button class="back" onclick="hmsInVisible()">X</button>
             <script>
                 function hmsInVisible() {
-                    document.getElementById('hms').style.visibility = 'hidden';
+                    document.getElementById('hms').style.display = 'none';
                 }
             </script>
         </div>
 
         <div class="about card info" id='sms'>
-            A console-based Student Management System in Core Java to efficiently<br>
-            manage student details in schools and colleges. This system handles student records,<br>
-            fee management, attendance, exam reports, and library operations.
-            <br>
-            Key Features:
-            <br>
-            <font color="gray">Student Management</font><br>
-            1. Fee Structure – Displays the fee details for students.<br>
+            <div style="width: auto; max-width: 70vw;">
+                A console-based Student Management System in Core Java to efficiently
+                manage student details in schools and colleges. This system handles student records,
+                fee management, attendance, exam reports, and library operations.<br><br>
 
-            2. Add Student – Registers a new student.<br>
+                <font color="gray">Key Features:</font><br><br>
+                <font color="gray">Student Management</font><br>
+                1. Fee Structure – Displays the fee details for students.<br>
 
-            3. Show All Students – Lists all students in the selected department.<br>
+                2. Add Student – Registers a new student.<br>
 
-            4. Search Student – Finds a student using their roll number.<br>
+                3. Show All Students – Lists all students in the selected department.<br>
 
-            5. Attendance Records – Maintains student attendance.<br>
+                4. Search Student – Finds a student using their roll number.<br>
 
-            6. Update Student Info – Allows modifications to student details.<br>
+                5. Attendance Records – Maintains student attendance.<br>
 
-            7. Due Fee Payment – Tracks and processes pending fees.<br>
+                6. Update Student Info – Allows modifications to student details.<br>
 
-            8. Exam Report – Stores and displays student marks.<br>
+                7. Due Fee Payment – Tracks and processes pending fees.<br>
 
-            <font color="gray">Library Management</font><br>
+                8. Exam Report – Stores and displays student marks.<br><br>
 
-            1. Add Book – Adds new books to the library.<br>
+                <font color="gray">Library Management</font><br>
 
-            2. Search Book – Finds books using keywords or IDs.<br>
+                1. Add Book – Adds new books to the library.<br>
 
-            3. Lend Book – Issues books to students.<br>
-            <br>
-            The library and student management systems are interconnected—students can use <br>
-            their roll numbers to borrow books, ensuring seamless integration between both modules.<br><br>
+                2. Search Book – Finds books using keywords or IDs.<br>
+
+                3. Lend Book – Issues books to students.<br><br>
+
+                The library and student management systems are interconnected—students can use
+                their roll numbers to borrow books, ensuring seamless integration between both modules.
+            </div>
             <button class="back" onclick="smsInVisible()">X</button>
             <script>
                 function smsInVisible() {
-                    document.getElementById('sms').style.visibility = 'hidden';
+                    document.getElementById('sms').style.display = 'none';
                 }
             </script>
         </div>
 
         <div class="about card info" id='hms_j'>
-            a Hotel Reservation System in Java that connects to a MySQL database, allowing hotel staff to manage
-            room<br>
-            bookings efficiently. This console-based application mimics a real-world reservation workflow,
-            supporting<br>
-            core hotel operations like room booking, updating reservations, and tracking departures.<br><br>
+            <div style="width: auto; max-width: 70vw;">
+                A Hotel Reservation System in Java that connects to a MySQL database, allowing hotel staff to manage
+                room bookings efficiently. This console-based application mimics a real-world reservation workflow,
+                supporting core hotel operations like room booking, updating reservations, and tracking
+                departures.<br><br>
 
-            <font color="gray">Features</font><br>
-            Room Availability Check: Displays currently unoccupied rooms by cross-referencing the database.<br><br>
+                <font color="gray">Features</font><br>
+                <li>Room Availability Check: Displays currently unoccupied rooms by cross-referencing the database.</li><br>
 
-            Guest Reservation: Allows users to reserve rooms by entering guest details and selecting from available<br>
-            rooms.<br><br>
+                <li>Guest Reservation: Allows users to reserve rooms by entering guest details and selecting from
+                available rooms.</li><br>
 
-            Reservation Management: View a detailed list of current reservations, including guest info, room
-            numbers,<br>
-            and booking dates.<br><br>
+                <li>Reservation Management: View a detailed list of current reservations, including guest info, room
+                numbers,and booking dates.</li><br>
 
-            Change Room Functionality: Enables updating room numbers for existing reservations.<br><br>
+                <li>Change Room Functionality: Enables updating room numbers for existing reservations.</li><br>
 
-            Departure Handling: Updates a reservation's status to 'out' and frees up the room.<br><br>
+                <li>Departure Handling: Updates a reservation's status to 'out' and frees up the room.</li><br><br>
 
-            This is my first JDBC project, where I built a Hotel Reservation System in Java with full CRUD (Create,<br>
-            Read, Update, Delete) functionality using a MySQL database. The application runs in the console.<br>
-
+                This is my first JDBC project, where I built a Hotel Reservation System in Java with full CRUD
+                (Create, Read, Update, Delete) functionality using a MySQL database. The application runs in the console.
+            </div>
 
             <button class="back" onclick="hms_j_InVisible()">X</button>
             <script>
                 function hms_j_InVisible() {
-                    document.getElementById('hms_j').style.visibility = 'hidden';
+                    document.getElementById('hms_j').style.display = 'none';
                 }
             </script>
         </div>
 
         <div class="about card info" id='banking'>
-            BankingApp
+            <div style="width: auto; max-width: 70vw;">
+            This project is my first JDBC-based Java application, designed to simulate a simple Banking Management
+            System with full CRUD functionality.<br><br>
+
+            <font color="gray">Key Features:</font>
+            <li>User Registration & Login using JDBC and password authentication.</li>
+
+            <li>Account Creation, with auto-generated account number and secure PIN.</li>
+
+            <li>Deposit & Withdrawal with PIN verification.</li>
+
+            <li>Money Transfer within bank accounts using JDBC transactions for atomicity.</li>
+
+            <li>Check Balance, Update PIN, and Logout options.</li><br>
+
+            <font color="gray">Implements CRUD operations:</font>
+
+            <li>Create: New users and bank accounts.</li>
+
+            <li>Read: Fetch account details and balances.</li>
+
+            <li>Update: Change PIN, deposit/withdraw amounts.</li>
+
+            <li>Delete: (Can be added later as an enhancement).</li><br>
+
+            <font color="gray">Technologies Used:</font>
+            <li>Java</li>
+
+            <li>MySQL</li>
+
+            <li>JDBC</li>
+
+            <li>Console-based UI</li><br>
+
+            <font color="gray">Packages</font>
+            <li>BankingApp: Main class with menu navigation.</li>
+
+            <li>User: Handles user-related actions like register/login.</li>
+
+            <li>Accounts: Manages account creation, account verification, and PIN changes.</li>
+
+            <li>AccountManager: Manages transactions like deposit, withdraw, transfer, and balance check.</li><br>
+
+            <font color="gray">Security Measures:</font>
+            <li>PIN authentication before sensitive operations.</li>
+
+            <li>Uses PreparedStatement to avoid SQL injection.</li><br>
+
+            This was an amazing learning experience working with real-world JDBC applications, simulating a banking
+            environment while learning Java database connectivity and SQL integration.
+            </div>
+            <button class="back" onclick="banking_InVisible()">X</button>
+            <script>
+                function banking_InVisible() {
+                    document.getElementById('banking').style.display = 'none';
+                }
+            </script>
         </div>
     </div>
 
@@ -346,7 +399,7 @@
             <h2 class="sub contain">Contact Me</h2><br>
             <form id="send_email">
                 <input type="text" placeholder="Your Name" class="form" name="name" required><br><br>
-                <input type="password" placeholder="Your Email" class="form" name="email" required><br><br>
+                <input type="email" placeholder="Your Email" class="form" name="email" required><br><br>
                 <textarea placeholder="Your Message" name="message" cols="67" rows="30" class="form textarea"
                     required></textarea><br><br>
                 <button class="small_adj">Send</button><br><br><br>
