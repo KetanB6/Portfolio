@@ -8,10 +8,11 @@ body {
   background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
   background-size: cover;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100vw;
   padding: 0 15px;
   font-family: 'Poppins', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -115,6 +116,11 @@ a:hover {
 .logos {
   width: 70px;
   height: 70px;
+} 
+.logos:hover{
+  width: 100px;
+  height: 100px;
+  transition-timing-function: ease-in-out;
 }
 
 /* Projects */
