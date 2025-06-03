@@ -7,18 +7,19 @@ html {
 body {
   background-image: url('https://raw.githubusercontent.com/KetanB6/Portfolio/744f6b51d24f02f3d6299ba714bda389ba32ddf1/wallpaper%201.jpg');
   background-size: cover;
-  margin: 0;
-  width: 60%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
   font-family: 'Poppins', sans-serif;
-  justify-self: unset;
+  color: white;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
   color: rgb(234, 233, 231);
-  font-size: 40px;
-  letter-spacing: 3px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 a:hover {
@@ -29,651 +30,294 @@ a:hover {
   position: fixed;
   inset: 0;
   backdrop-filter: blur(7px);
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
-h2,
-.sub {
-  color: rgb(194, 245, 240);
-  cursor: pointer;
-  left: 50%;
-}
-
-h2:hover,
-.sub:hover {
-  color: aqua;
-}
-
-.contain {
-  width: auto;
-  display: flex;
-  justify-content: center;
-}
-
-hr {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: 10.5%;
-  background-color: rgb(155, 154, 152);
-  border: 0;
-}
-
-/* Header Text */
-#head1,
-#iam,
-#main,
-#sub {
+/* Profile pic */
+.profile_pic {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin: 20px auto;
   position: relative;
-  cursor: default;
+  top: 8vh;
+  border-style:groove;
+  border: 13px #aaa8a8 solid;
 }
 
+
+/* Card layout */
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Typography */
 #head1 {
-  top: 2%;
-  left: 3%;
-  font-size: 40px;
-  color: rgb(133, 132, 131);
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-#iam {
-  top: 13%;
-  left: 55.4%;
-  font-size: 50px;
-  color: rgb(191, 190, 187);
+.intro{
+  top:-48.5vh;
+  position: relative;
+  line-height: 0.9;
+}
+
+#iam{
+  position: relative;
+  left: 35vw;
+  font-size: 2.5rem;
+  letter-spacing: 3;
+  color: #e2dfdf;
 }
 
 #main {
-  top: -2%;
-  left: 55%;
-  font-size: 90px;
-  letter-spacing: 3px;
-  color: rgb(228, 226, 223);
-  transition: 1s;
-}
-
-#main:hover {
-  font-size: 95px;
-  color: rgb(244, 243, 240);
-  letter-spacing: 4px;
+  font-size: 5rem;
+  position: relative;
+  left: 35vw;
+  letter-spacing: 3;
+  color: #f3f2f2;
+  margin-top: 0vh; 
 }
 
 #sub {
-  top: -14%;
-  left: 56%;
-  font-size: 22px;
-  letter-spacing: 24px;
-  color: rgb(191, 190, 187);
-}
-
-.scroll_link {
+  color: #828080;
+  font-size: 2.2rem;
   position: relative;
-  z-index: 2;
-  /* Must be above the .blur-overlay z-index of 0 */
-  top: -13vh;
-  left: 33vw;
-  color: rgb(234, 233, 231);
-  font-size: 40px;
-  font-family: poppins;
-  letter-spacing: 3px;
-  text-decoration: none;
+  left: 35vw;
+  letter-spacing: 13;
+  margin-top: -2.5vh;
 }
 
-
-/* Social Icons */
-.profile,
-.linkedin,
-.insta,
-.options {
-  position: absolute;
-  top: 4%;
-  height: 6%;
-  width: 3%;
-}
-
-.profile:hover,
-.linkedin:hover,
-.insta:hover {
-  opacity: 0.7;
-}
-
-.profile {
-  left: 82%;
-}
-
-.linkedin {
-  left: 87%;
-}
-
-.insta {
-  left: 92%;
-}
-
-.options {
-  left: 96.5%;
-}
-
-/* Profile Pic */
-.profile_pic {
-  position: absolute;
-  top: 27%;
-  left: 5%;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 19px solid rgb(99, 103, 101);
-  box-shadow: 0 4px 10px;
-  transition: 2s;
-  border-style: groove;
-}
-
-.profile_pic:hover {
-  width: 280px;
-  height: 280px;
-}
-
-/* Section Containers */
-.about,
-.skills,
-.projects,
-.SMS {
+.scroll_link{
+  font-size: 2.2rem;
   position: relative;
-  color: white;
-  font-family: poppins;
-  background-color: transparent;
-  border: 0;
-  border-radius: 5px;
+  left: 35vw;
+  top:-49vh;
 }
 
-.about {
-  width: 89vw;
-  padding-left: 1%;
-  height: 110%;
-  font-size: 20px;
-  line-height: 40px;
-}
-
-.skills {
-  top: 50%;
-  height: 202%;
-}
-
-.projects {
-  top: 70%;
-  height: 212%;
-  width: 164%;
-}
-
-.SMS {
-  top: 68%;
-  height: 220%;
-  width: 164%;
-}
-
-/* Project Previews */
-.hotel_out,
-.SMS_out {
-  position: absolute;
-  height: 83%;
-  width: 25%;
-  border-radius: 25px;
-}
-
-.hotel_out {
-  top: 21%;
-  left: 72%;
-}
-
-.SMS_out {
-  top: 23%;
-  left: -30%;
-  height: 89%;
-  width: 30%;
-}
-
-.SMS_desc {
-  position: absolute;
-  top: 1%;
-  left: 23%;
-  padding-left: 20px;
-  height: 93%;
-  width: 75%;
-}
-
-/* Code Text */
-.hotel_code,
-.sms_code {
-  position: relative;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-.hotel_code {
-  top: 12vh;
-  left: -13vw;
-}
-
-.sms_code {
-  top: 23vh;
-  left: -20vh;
-}
-
-.padarth {
-  background-color: aqua;
-}
-
-/* Shared Card Style */
-.card {
-  background: transparent;
-  backdrop-filter: blur(50px);
-  top: 40vh;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  margin-left: 5vh;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 15px rgba(3, 3, 3, 0.05);
-  border: 2px solid #ccc;
-}
-
-/* Lists and Layouts */
-ul {
-  display: flex;
-  list-style: none;
-  gap: 10vw;
-  padding-left: 15vw;
-}
-
-.logos {
-  height: 20vh;
-  width: 16vw;
-  margin-left: 4vw;
-  object-fit: contain;
-}
-
-.proj_height {
-  height: 8vh;
-  padding-top: 0vh;
-  background-color: rgb(90, 91, 92);
-}
-
-.proj_container,
+/* Languages */
 .skill_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 15px;
 }
 
+.logos {
+  width: 70px;
+  height: 70px;
+}
+
+/* Projects */
 .proj_container {
-  gap: 11vw;
-  justify-content:space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.skill_container {
-  gap: 2vw;
-  row-gap: 5vw;
-  margin-left: -4vw;
-}
-
-.proj,
-.HMS_IMG {
-  width: 42vh;
-  height: 30vh;
-  border: 2px solid #ccc;
-  border-radius: 20px;
-}
-
-.proj:hover {
-  filter: blur(5px);
+.proj {
+  width: auto;
+  max-width: 390px;
+  height: auto;
+  max-height: 140px;
+  cursor: pointer;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .size {
-  font-size: 20px;
-  width: 20vw;
-}
-
-/* Inputs */
-.email {
-  width: 35vw;
-  height: 8vh;
-  margin-left: 27vw;
-  margin-top: 3vh;
-  background: transparent;
-  backdrop-filter: blur(50px);
-  color: aliceblue;
-  font-size: 20px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  width: 15vh;
-  height: 6vh;
-  background: transparent;
-  border-radius: 10px;
-  border: 2px solid #ccc;
-  color: rgb(134, 194, 247);
-  font-weight: 600;
-  font-size: 20px;
-  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .more {
-  width: 10vw;
-  position: fixed;
-  bottom: 2vh;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgb(171, 220, 220);
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.back {
-  width: 3vw;
-  position: fixed;
-  right: 10px;
-  top: 3vh;
-}
-
-.info {
-  margin-top: 0px;
-  background-color: rgb(52, 55, 63);
-  backdrop-filter: blur(70px);
-  font-size: 16px;
-  line-height: 1.5;
-  position:relative;
-  top: -85vh;
-  left: -2.5vw;
-  height: auto;
-  width: 85vw;
-  display: none;
+/* Contact */
+.subdiv {
+  width: 100%;
+  max-width: 700px;
 }
 
 .form {
-  border: 1px #ccc solid;
-  width: 40vw;
-  height: 6vh;
-  font-size: 20px;
-  border-radius: 8px;
-  background-color: transparent;
-  color: aliceblue;
-  flex: 1 0 10rem;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .textarea {
-  height: 20vh;
-  resize: none;
+  resize: vertical;
+  height: 120px;
 }
 
-.form::placeholder {
-  font-size: 20px;
+.small_adj {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Social Icons */
+.profile, .linkedin, .insta {
+  margin: 10px;
+}
+
+.social{
+  width:10px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -90vh;
+  left: 90vw;
+}
+
+/* Info popup panels */
+.info {
+  display: none;
+  max-width: 100%;
+  margin: 20px auto;
 }
 
 .back {
-  /* background-color: rgb(127, 229, 243); */
-  padding-top: 20px;
-  padding-bottom: 90px;
-  border-radius: 10px;
-  background-color: transparent;
-  border: 1px #413f3f solid;
-  box-shadow: 10px 10px 15px #494848;
+  background-color: red;
+  color: white;
+  border: none;
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
+input, textarea{
+  background-color: rgb(199, 204, 204);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   body {
-    background-size: cover;
-    background-color: #201f1f;
-    height: 200%;
-  }
-
-  hr {
-    top: 7vh;
-    width: 100vw;
-  }
-
-  .profile {
-    left: 70%;
-    top: 2.5%;
-  }
-
-  .linkedin {
-    left: 85vw;
-    top: 2.5%;
-  }
-
-  .insta {
-    left: 100vw;
-    top: 2.5%;
-  }
-
-  .profile_pic {
-    top: 13vh;
-    left: 3vh;
-    width: 23vh;
-    height: 23vh;
-    border: 13px solid rgb(99, 103, 101);
-    border-style: groove;
-  }
-
-  .logos {
-    height: 10vh;
-    width: 14vw;
-    margin-left: 4vw;
-    object-fit: fill;
-  }
-
-  #head1 {
-    top: 1vh;
-    left: 1vh;
-    font-size: 37px;
-    color: rgb(116, 114, 112);
-  }
-
-  #iam {
-    top: 30vh;
-    left: 5vh;
-    font-size: 25px;
+    padding: 0 10px;
   }
 
   #main {
-    top: 25vh;
-    left: 4.7vh;
-    font-size: 65px;
-    letter-spacing: 6px;
-    line-height: 1.2;
-  }
-
-  #main:hover {
-    font-size: 70px;
-    letter-spacing: 6px;
+    font-size: 2rem;
   }
 
   #sub {
-    top: 19vh;
-    left: 5vh;
-    font-size: 25px;
-    letter-spacing: 4px;
+    font-size: 1.2rem;
   }
 
-  .scroll_link {
-    top: 18vh;
-    left: 5vh;
-    font-size: 21px;
+  .skill_container, .proj_container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about {
-    top: 35vh;
-    font-size: 15px;
-    line-height: 30px;
+  .logos {
+    width: 50px;
+    height: 50px;
   }
 
-  .skills {
-    top: 20%;
-    height: 105%;
-  }
-
-  .hotel_out {
-    top: 37%;
-    left: 81%;
-    height: 15%;
-    width: 15%;
-    border-radius: 10px;
-  }
-
-  .hotel_out:hover {
-    top: 10%;
-    left: 10%;
-    height: 80%;
+  .proj {
     width: 90%;
-  }
-
-  .SMS {
-    left: -110px;
-    top: 30%;
-    width: 190%;
-  }
-
-  .SMS_out {
-    top: 21.3%;
-    left: 85%;
-    height: 5%;
-    width: 15%;
-    border-radius: 10px;
-  }
-
-  .SMS_out:hover {
-    top: 0%;
-    left: 1%;
-    height: 23%;
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .hotel_code {
-    top: 9%;
-    left: -12%;
-    font-size: 15px;
-  }
-
-  .sms_code {
-    top: 4.9%;
-    left: 14%;
-    font-size: 20px;
-  }
-
-  .card {
-    margin-left: 5.5vw;
-  }
-
-  .size {
-    width: 40vh;
-  }
-
-  .more {
-    width: auto;
-    height: auto;
-  }
-
-  .small_adj{
-    width: auto;
-    height: auto;
-  }
-
-  .btn1 {
-    top: 26vh;
-    left: 13vh;
-  }
-
-  .btn2 {
-    top: 69vh;
-    left: 13vh;
-  }
-
-  .btn3 {
-    top: 112vh;
-    left: 13vh;
-  }
-
-  .btn4 {
-    top: 155vh;
-    left: 13vh;
-  }
-
-  .info {
-    top: -135vh;
-    left: -5.6vh;
-    height: auto;
-    font-size: 14px;
-    line-height: 2;
-  }
-
-  .back {
-    width: 5vh;
-    position: fixed;
-    bottom: 0px;
-    right:0px;
-  }
-
-  .profile,
-  .linkedin,
-  .insta {
-    position: absolute;
-    top: 2.2%;
-  }
-
-  .profile:hover,
-  .linkedin:hover,
-  .insta:hover {
-    opacity: 0.7;
-  }
-
-  .profile {
-    left: 62%;
-  }
-
-  .linkedin {
-    left: 75%;
-  }
-
-  .insta {
-    left: 88%;
-  }
-
-  .card {
-    width: 75vw;
-  }
-
-  .proj,
-  .HMS_IMG {
-    width: 34vh;
-    height: 25vh;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    margin-left: 0vh;
-  }
-
-  .size {
-    font-size: 18px;
-    width: 30vh;
-    margin-left: 1vh;
-  }
-
-  .email {
-    width: 40vw;
-    height: 8vh;
-    margin-left: 18vw;
-  }
-
-  .textarea {
-    height: 15vh;
-    resize: none;
-  }
-
-  .small_adj {
-    margin-left: 16vw;
-    width: 20vw;
+    max-width: none;
   }
 
   .form {
-    width: 50vw;
+    font-size: 1rem;
   }
 
+  .size {
+    font-size: 1.1rem;
+  }
+
+  .profile_pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 10px #aaa8a8 solid;
+  } 
+
+  #iam, #main, #sub {
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  #head1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  #iam{
+  position: relative;
+  left: 0vw;
+  font-size: 1.5rem;
+  letter-spacing: 1;
+  color: #e2dfdf;
+}
+
+#main {
+  font-size: 2.5rem;
+  position: relative;
+  left: 0vw;
+  letter-spacing: 1;
+  color: #f3f2f2;
+  margin-top: 0vh; 
+}
+
+#sub {
+  color: #828080;
+  font-size: 1.5rem;
+  position: relative;
+  left: 0vw;
+  letter-spacing: 2.1;
+  margin-top: -1vh;
+}
+
+
+  .intro{
+    text-align: center;
+    top: 12vh;
+  }
+
+  .scroll_link{
+  font-size: 1.3rem;
+  position: relative;
+  left: 8vw;
+  top:12vh;
+}
+
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -42.5vh;
+  left: 83vw;
+}
 }
