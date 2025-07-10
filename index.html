@@ -30,7 +30,7 @@
     <div class="about card home">
         <h2 id="head1">Portfolio</h2>
         <hr>
-        <img src="https://raw.githubusercontent.com/KetanB6/Portfolio/e7389b14d7b32305328641ffdf6af1419edaa43e/linkedin.jpg"
+        <img src="https://github.com/KetanB6/Portfolio/blob/main/pfp.png?raw=true"
             class="profile_pic">
         <div class="intro">
             <h2 id="iam">Hello, I'am</h2>
@@ -79,14 +79,10 @@
     <div class="about card">
         <h2 class="sub contain">Languages</h2>
         <div class="skill_container">
-            <img src="https://github.com/KetanB6/Portfolio/blob/main/C.png?raw=true"
-                alt="c" class="logos">
-            <img src="https://github.com/KetanB6/Portfolio/blob/main/C++.png?raw=true"
-                alt="c++" class="logos">
-            <img src="https://github.com/KetanB6/Portfolio/blob/main/python.png?raw=true"
-                alt="py" class="logos">
-            <img src="https://github.com/KetanB6/Portfolio/blob/main/java.png?raw=true"
-                alt="java" class="logos">
+            <img src="https://github.com/KetanB6/Portfolio/blob/main/C.png?raw=true" alt="c" class="logos">
+            <img src="https://github.com/KetanB6/Portfolio/blob/main/C++.png?raw=true" alt="c++" class="logos">
+            <img src="https://github.com/KetanB6/Portfolio/blob/main/python.png?raw=true" alt="py" class="logos">
+            <img src="https://github.com/KetanB6/Portfolio/blob/main/java.png?raw=true" alt="java" class="logos">
 
             <img src="https://raw.githubusercontent.com/KetanB6/Portfolio/7a7ec9f4ca48a3f0bf7493b4bf57fc37a3b05f3b/html.png"
                 alt="css" class="logos">
@@ -94,8 +90,7 @@
                 alt="html" class="logos">
             <img src="https://raw.githubusercontent.com/KetanB6/Portfolio/7a7ec9f4ca48a3f0bf7493b4bf57fc37a3b05f3b/js.png"
                 alt="css" class="logos">
-            <img src="https://github.com/KetanB6/Portfolio/blob/main/sql.png?raw=true"
-                alt="sql" class="logos">
+            <img src="https://github.com/KetanB6/Portfolio/blob/main/sql.png?raw=true" alt="sql" class="logos">
         </div>
     </div>
 
@@ -115,10 +110,21 @@
                 </script>
             </div>
 
+            <div class="MindCalc_main">
+
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/MindCalc.png?raw=true" alt="MindCalc" class="proj" onclick="mindCalcVisible()">
+                <h3 class="size">MindCalc: Mental Calculation</h3>
+                <script>
+                    function mindCalcVisible() {
+                        document.getElementById('mindCalc').style.display = 'block';
+                    }
+                </script>
+            </div>
+
             <div class="CurrencyConveter_main">
 
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/CurrencyConverterApp.png?raw=true" alt="CurrencyConverterApp" class="proj"
-                    onclick="currency_Visible()">
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/CurrencyConverterApp.png?raw=true"
+                    alt="CurrencyConverterApp" class="proj" onclick="currency_Visible()">
                 <h3 class="size">Currency Converter App</h3>
                 <script>
                     function currency_Visible() {
@@ -127,9 +133,10 @@
                 </script>
             </div>
 
-            <div class="LMS_main">
+            <div class="LMS_main" id="more1" style="display: none;">
 
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/LMS_APP.png?raw=true" alt="LibraryManagementSystem" class="proj" onclick="library_Visible()">
+                <img src="https://github.com/KetanB6/Portfolio/blob/main/LMS_APP.png?raw=true"
+                    alt="LibraryManagementSystem" class="proj" onclick="library_Visible()">
                 <h3 class="size">Library Management System</h3>
                 <script>
                     function library_Visible() {
@@ -161,47 +168,22 @@
                 </script>
             </div>
 
-            <div class="SMS_main" id="more4" style="display:none;">
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/SMS.png?raw=true" alt="SMS" class="proj"
-                    onclick="smsVisible()">
-                <h3 class="size">Student Management System</h3>
-                <script>
-                    function smsVisible() {
-                        document.getElementById('sms').style.display = 'block';
-                    }
-                </script>
-            </div>
-
-            <div class="HMS_main" id="more5" style="display:none;">
-
-                <img src="https://github.com/KetanB6/Portfolio/blob/main/HMS.png?raw=true" alt="HMS" class="proj"
-                    onclick="hmsVisible()">
-                <h3 class="size">Hotel Management system in C++</h3>
-                <script>
-                    function hmsVisible() {
-                        document.getElementById('hms').style.display = 'block';
-                    }
-                </script>
-            </div>
-
 
 
             <br><button class="more1 more2" onclick="unhide()" id="more_btn">→</button>
             <br><button class="more1 more2" onclick="hide()" id="less" style="visibility: hidden;">←</button>
             <script>
                 function unhide() {
+                    document.getElementById('more1').style.display = 'block';
                     document.getElementById('more2').style.display = 'block';
                     document.getElementById('more3').style.display = 'block';
-                    document.getElementById('more4').style.display = 'block';
-                    document.getElementById('more5').style.display = 'block';
                     document.getElementById('more_btn').style.visibility = 'hidden';
                     document.getElementById('less').style.visibility = 'visible';
                 }
                 function hide() {
+                    document.getElementById('more1').style.display = 'none';
                     document.getElementById('more2').style.display = 'none';
                     document.getElementById('more3').style.display = 'none';
-                    document.getElementById('more4').style.display = 'none';
-                    document.getElementById('more5').style.display = 'none';
                     document.getElementById('more_btn').style.visibility = 'visible';
                     document.getElementById('less').style.visibility = 'hidden';
                 }
@@ -209,7 +191,7 @@
         </div>
 
         <div class="about card info" id='padarth'>
-            <div style="width: auto; max-width: 70vw;">
+            <div style="width: auto; max-width: 90vw;">
                 Padarth is a web-based ingredient analysis tool that allows users to scan,
                 upload, and search for ingredients to retrieve detailed information and know
                 how safe an ingredient is for health.<br><br>
@@ -254,109 +236,27 @@
             </script>
         </div>
 
-        <div class="about card info" id='hms'>
-            <div style="width: auto; max-width: 70vw;">
-                A Hotel Management System in C++ that efficiently handles various
-                reception-related operations, such as guest management and room management.
-                The program provides an instructions to perform hotel operations.<br><br>
-
-                Key Features:<br>
-                1. Available Rooms:<br>
-                Displays a list of available rooms along with their price/rent.<br><br>
-
-                2. Room Booking:<br>
-                Allows new bookings and generates a receipt upon successful reservation.<br><br>
-
-                3. Cancel Room:<br>
-                Enables guests to cancel their booking, but they must do so within 15 seconds
-                of receipt generation.<br><br>
-
-                4. Departure:<br>
-                Manages guest check-out and updates room availability accordingly.<br><br>
-
-                5. Assigned Room List:<br>
-                Displays all rooms along with their current status: booked, canceled,
-                or checked out.<br><br>
-
-                Developing this project significantly enhanced my problem-solving skills,
-                logical thinking, and object-oriented programming (OOP) concepts. It also provided
-                valuable experience in designing structured and efficient programs.
-            </div>
-            <button class="back" onclick="hmsInVisible()">X</button>
-            <script>
-                function hmsInVisible() {
-                    document.getElementById('hms').style.display = 'none';
-                }
-            </script>
-        </div>
-
-        <div class="about card info" id='sms'>
-            <div style="width: auto; max-width: 70vw;">
-                A console-based Student Management System in Core Java to efficiently
-                manage student details in schools and colleges. This system handles student records,
-                fee management, attendance, exam reports, and library operations.<br><br>
-
-                <font color="gray">Key Features:</font><br><br>
-                <font color="gray">Student Management</font><br>
-                1. Fee Structure – Displays the fee details for students.<br>
-
-                2. Add Student – Registers a new student.<br>
-
-                3. Show All Students – Lists all students in the selected department.<br>
-
-                4. Search Student – Finds a student using their roll number.<br>
-
-                5. Attendance Records – Maintains student attendance.<br>
-
-                6. Update Student Info – Allows modifications to student details.<br>
-
-                7. Due Fee Payment – Tracks and processes pending fees.<br>
-
-                8. Exam Report – Stores and displays student marks.<br><br>
-
-                <font color="gray">Library Management</font><br>
-
-                1. Add Book – Adds new books to the library.<br>
-
-                2. Search Book – Finds books using keywords or IDs.<br>
-
-                3. Lend Book – Issues books to students.<br><br>
-
-                The library and student management systems are interconnected—students can use
-                their roll numbers to borrow books, ensuring seamless integration between both modules.
-            </div>
-            <button class="back" onclick="smsInVisible()">X</button>
-            <script>
-                function smsInVisible() {
-                    document.getElementById('sms').style.display = 'none';
-                }
-            </script>
-        </div>
-
         <div class="about card info" id='hms_j'>
-            <div style="width: auto; max-width: 70vw;">
-                A Hotel Reservation System in Java that connects to a MySQL database, allowing hotel staff to manage
-                room bookings efficiently. This console-based application mimics a real-world reservation workflow,
-                supporting core hotel operations like room booking, updating reservations, and tracking
-                departures.<br><br>
+            <div style="width: auto; max-width: 90vw;">
+                <b>Hotel Reservation System – Java & JDBC Project</b><br><br>
 
-                <font color="gray">Features</font><br>
-                <li>Room Availability Check: Displays currently unoccupied rooms by cross-referencing the database.</li>
-                <br>
+                A console-based Hotel Reservation System built in Java using JDBC and MySQL, designed to help hotel
+                staff manage bookings efficiently. It simulates real-world hotel operations with full CRUD
+                functionality.<br><br>
 
-                <li>Guest Reservation: Allows users to reserve rooms by entering guest details and selecting from
-                    available rooms.</li><br>
+                <font color="gray"><b>Key Features:</b></font><br>
+                - Room availability check by querying unoccupied rooms from the database<br>
+                - Guest reservation by entering details and selecting available rooms<br>
+                - Manage reservations with guest info, room numbers, and booking dates<br>
+                - Update existing bookings with room change functionality<br>
+                - Handle departures by updating reservation status and freeing up rooms<br><br>
 
-                <li>Reservation Management: View a detailed list of current reservations, including guest info, room
-                    numbers,and booking dates.</li><br>
+                <b>Technologies Used:</b><br>
+                Java, JDBC, MySQL, Console-based UI<br><br>
 
-                <li>Change Room Functionality: Enables updating room numbers for existing reservations.</li><br>
+                This was my first JDBC project and helped me understand database integration, query handling, and how to
+                build interactive, real-world applications in Java.
 
-                <li>Departure Handling: Updates a reservation's status to 'out' and frees up the room.</li><br><br>
-
-                This is my first JDBC project, where I built a Hotel Reservation System in Java with full CRUD
-                (Create, Read, Update, Delete) functionality using a MySQL database. The application runs in the
-                console.
             </div>
 
             <button class="back" onclick="hms_j_InVisible()">X</button>
@@ -368,19 +268,12 @@
         </div>
 
         <div class="about card info" id='currency'>
-            <div style="width: auto; max-width: 70vw;">
+            <div style="width: auto; max-width: 90vw;">
                 Here is a Currency Converter Web App A fast, intuitive currency conversion tool that lets<br>
                 users convert values between 35+ global currencies using live exchange rates.<br><br>
 
-                <a href="https://currencyconverterapp-wvbi.onrender.com/">🔗 Try it here:</a><br><br>
-
-                🔑 Key Features:<br><br>
-
-                - Convert between multiple currencies in real-time<br>
-
-                - Display country flags and codes alongside currency<br>
-
-                - Uses live exchange rates via API integration<br>
+                <a href="https://currencyconverterapp-wvbi.onrender.com/">🔗<font color="aqua">Try it here:</font>
+                </a><br><br>
 
                 🛠 How It Works:<br><br>
 
@@ -412,72 +305,26 @@
         </div>
 
         <div class="about card info" id='library'>
-            <div style="width: auto; max-width: 70vw;">
-                Library Management System (Web App) A role-based library management system that enables librarians
-                and<br>
-                members to manage books, borrow/return records, and member registrations through a clean, web-based<br>
-                interface.<br><br>
+            <div style="width: auto; max-width: 90vw;">
+                <b>Library Management System – Full-Stack Web App</b><br><br>
 
+                A role-based web application built using Java Servlets and JDBC that allows librarians and members to
+                manage books, borrowing records, and member registrations via a dynamic web interface.<br><br>
 
-                🔑 Key Features<br><br>
+                <b>Key Features:</b><br>
+                - Role-based login for Librarians and Members<br>
+                - Add/search/view books and register members (Librarian panel)<br>
+                - Search, borrow, and return books with real-time status updates (Member panel)<br>
+                - Automatic transaction tracking and availability reflection in the database<br><br>
 
+                <b>Technologies Used:</b><br>
+                Frontend: HTML, CSS, JavaScript<br>
+                Backend: Java Servlets, JSP<br>
+                Database: MySQL via JDBC<br><br>
 
-                👨‍💼 Librarian Panel<br>
+                This was my first full-stack web application, helping me learn role-based access control, servlet-based
+                backend logic, and seamless frontend-backend integration using JDBC.
 
-                - Register new librarians<br>
-
-                - Add/search/view books<br>
-
-                - Register and list members<br><br>
-
-
-                👥 Member Panel<br>
-
-                - Search, borrow, and return books<br>
-
-                - Check available books<br><br>
-
-
-                🔄 Real-time updates on book availability status<br>
-                📊 Automatic transaction handling with borrower tracking<br><br>
-
-
-                🛠 How It Works<br><br>
-
-                1. User selects either Librarian or Member login from the homepage<br>
-
-
-                2. After login, different dashboard panels are shown based on role<br>
-
-
-                3. All operations update the backend database using Servlets & JDBC<br>
-
-
-                4. Book availability is reflected in both books and borrower_list tables<br><br>
-
-
-
-                💡 Technologies Used<br><br>
-
-                - Frontend: HTML, CSS, JavaScript<br>
-                - Backend: Java Servlets<br>
-                - UI Rendering: JSP (Java Server Pages)<br>
-                - Database: MySQL via JDBC<br><br>
-
-                📦 Database Tables:<br><br>
-
-                - books<br>
-
-                - librarians<br>
-
-                - members<br>
-
-                - borrower_list<br><br>
-
-
-                This was my first full-stack web application and most complex project yet.<br>
-                It helped me gain hands-on experience in real-world web app design, role-based systems, JDBC<br>
-                connectivity, and transaction management.<br>
             </div>
             <button class="back" onclick="library_InVisible()">X</button>
             <script>
@@ -488,67 +335,28 @@
         </div>
 
         <div class="about card info" id='banking'>
-            <div style="width: auto; max-width: 70vw;">
-                This project is my first JDBC-based Java application, designed to simulate a simple Banking
-                Management<br>
-                System with full CRUD functionality.<br><br>
+            <div style="width: auto; max-width: 90vw;">
+                <b>Banking Management System – Java & JDBC Project</b><br><br>
 
-                Key Features:<br><br>
+                This is my first Java application using JDBC, designed to simulate a basic Banking Management System
+                with complete CRUD functionality.<br><br>
 
-                - User Registration & Login using JDBC and password authentication.<br>
+                <b>Key Features:</b><br>
+                - User registration and login with password authentication<br>
+                - Account creation with auto-generated account number and secure PIN<br>
+                - Deposit, withdrawal, and money transfer with PIN verification<br>
+                - Balance check, PIN update, and logout<br>
+                - JDBC transaction management ensures data integrity<br>
+                - Secure coding using <code>PreparedStatement</code> to prevent SQL injection<br><br>
 
-                - Account Creation, with auto-generated account number and secure PIN.<br>
+                <b>Technologies Used:</b><br>
+                Java, JDBC, MySQL, Console-based UI<br><br>
 
-                - Deposit & Withdrawal with PIN verification.<br>
+                <b>Project Structure:</b><br>
+                - <code>User</code>: Handles registration and login<br>
+                - <code>Accounts</code>: Manages account creation and PIN handling<br>
+                - <code>AccountManager</code>: Manages transactions and balance checking<br><br>
 
-                - Money Transfer within bank accounts using JDBC transactions for atomicity.<br>
-
-                - Check Balance, Update PIN, and Logout options.<br><br>
-
-
-                Implements CRUD operations:<br><br>
-
-                - Create: New users and bank accounts.<br>
-
-                - Read: Fetch account details and balances.<br>
-
-                - Update: Change PIN, deposit/withdraw amounts.<br>
-
-                - Delete: (Can be added later as an enhancement).<br><br>
-
-
-                Technologies Used:<br><br>
-
-                - Java<br>
-
-                - MySQL<br>
-
-                - JDBC<br>
-
-                - Console-based UI<br><br>
-
-
-                Packages<br><br>
-
-                - BankingApp: Main class with menu navigation.<br>
-
-                - User: Handles user-related actions like register/login.<br>
-
-                - Accounts: Manages account creation, account verification, and PIN changes.<br>
-
-                - AccountManager: Manages transactions like deposit, withdraw, transfer, and balance check.<br><br>
-
-
-                Security Measures:<br><br>
-
-                - PIN authentication before sensitive operations.<br>
-
-                - Uses PreparedStatement to avoid SQL injection.<br><br>
-
-
-                This was an amazing learning experience working with real-world JDBC applications, simulating a
-                banking<br>
-                environment while learning Java database connectivity and SQL integration.<br>
             </div>
             <button class="back" onclick="banking_InVisible()">X</button>
             <script>
@@ -557,6 +365,43 @@
                 }
             </script>
         </div>
+
+        <div class="about card info" id='mindCalc'>
+            <div style="width: auto; max-width: 90vw;">
+                🎯 About MindCalc:<br>
+                MindCalc is a browser-based game where users solve math problems under time pressure. It’s ideal for
+                students, developers, or anyone looking to sharpen their calculation speed.<br><br>
+
+                <a href="https://mindcalc.onrender.com">🔗<font color="aqua">Try it here:</font></a><br><br>
+
+                🧩 Current Features:<br><br>
+
+                - Addition-based challenges<br>
+
+                - Timed sessions<br>
+
+                - Clean and responsive UI<br>
+
+                - Score tracking and feedback<br><br>
+
+
+                This project helped me gain hands-on experience in:<br><br>
+
+                - Java Servlet architecture<br>
+
+                - Session-based game logic<br>
+
+                - Frontend design in pure HTML/CSS<br>
+
+            </div>
+            <button class="back" onclick="MindCalc_InVisible()">X</button>
+            <script>
+                function MindCalc_InVisible() {
+                    document.getElementById('mindCalc').style.display = 'none';
+                }
+            </script>
+        </div>
+
     </div>
 
 
